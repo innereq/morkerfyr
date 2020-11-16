@@ -1,31 +1,24 @@
 <script>
+	import Index from '../components/Index.svelte';
 	import RadioPlayer from '../components/RadioPlayer.svelte';
+	import Footer from '../components/Footer.svelte';
 </script>
 
 <style>
-	h1 {
-		text-align: center;
-		margin: 0 auto;
-	}
-
-	h1 {
-		font-size: 2.8em;
-		text-transform: uppercase;
-		font-weight: 700;
-		margin: 0 0 0.5em 0;
-	}
-
-	@media (min-width: 480px) {
-		h1 {
-			font-size: 4em;
-		}
-	}
 </style>
 
 <svelte:head>
 	<title>Mörkerfyr Radio</title>
 </svelte:head>
 
-<h1>Mörkerfyr Radio</h1>
-
-<RadioPlayer/>
+<div class="flex flex-col justify-between p-4 min-h-screen">
+	<div>
+		<Index/>
+	</div>
+	<div class="flex-1">
+		<RadioPlayer/>
+	</div>
+	<div>
+		<Footer/>
+	</div>
+</div>
