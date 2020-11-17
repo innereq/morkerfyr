@@ -5,7 +5,8 @@
     ];
 
     let social = [
-        { name: "Telegram", link: "https://t.me/morkerfyr"}
+        { name: "Telegram", link: "https://t.me/morkerfyr"},
+        { name: "GitHub", link: "https://github.com/innereq/morkerfyr"}
     ];
 </script>
 

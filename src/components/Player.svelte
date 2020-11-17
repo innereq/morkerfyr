@@ -43,7 +43,7 @@
     <div class="absolute inset-0 mx-auto pt-48">
         <!-- svelte-ignore a11y-media-has-caption -->
         <audio id="player" controls="controls" preload="none">
-            <source src="http://127.0.0.1:8000/example" type="audio/mpeg">
+            <source src="https://morkerfyr.mle.party/stream" type="audio/mpeg">
         </audio>
     </div>
 </div>

@@ -12,7 +12,7 @@
 
     // Do things only when DOM is rendered.
     onMount(() => {
-        var url_stream = "http://127.0.0.1:8000/example";
+        var url_stream = "https://morkerfyr.mle.party/stream";
         var url_metadata = url_stream + "/metadata";
         var url_history = url_metadata + "-history";
 
