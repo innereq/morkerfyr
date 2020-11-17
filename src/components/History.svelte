@@ -1,7 +1,6 @@
 <script>
-    import { onMount, onDestroy } from 'svelte';
+    import { onMount } from 'svelte';
     import { nowplaying } from '../stores.js';
-    import Plyr from 'plyr';
 
     // Init global value for now playing song.
     let song_current;
@@ -16,28 +15,6 @@
         var url_stream = "http://127.0.0.1:8000/example";
         var url_metadata = url_stream + "/metadata";
         var url_history = url_metadata + "-history";
-
-        // Audio player.
-        const controls = `
-            <div class="plyr__controls">
-                <button type="button" class="plyr__control" aria-label="Play, {title}" data-plyr="play">
-                    <svg class="icon--pressed" role="presentation"><use xlink:href="#plyr-pause"></use></svg>
-                    <svg class="icon--not-pressed" role="presentation"><use xlink:href="#plyr-play"></use></svg>
-                </button>
-                <button type="button" class="plyr__control" aria-label="Mute" data-plyr="mute">
-                    <svg class="icon--pressed" role="presentation"><use xlink:href="#plyr-muted"></use></svg>
-                    <svg class="icon--not-pressed" role="presentation"><use xlink:href="#plyr-volume"></use></svg>
-                </button>
-                <div class="plyr__volume">
-                    <input data-plyr="volume" type="range" min="0" max="1" step="0.05" value="1" autocomplete="off" aria-label="Volume">
-                </div>
-                </button>
-            </div>
-            `;
-        const player = new Plyr('#player', {
-            title: "test",
-            controls,
-        });
 
         try {
             var eventSource = new EventSource(url_metadata);
@@ -76,12 +53,8 @@
 </style>
 
 <div class="text-center">
-    <div class="mx-auto w-1/2">
+    <div class="mx-auto">
         <h4 id="nowplaying" class="text-3xl">🎶 {$nowplaying} 🎶</h4>
-        <!-- svelte-ignore a11y-media-has-caption -->
-        <audio id="player" controls="controls" preload="none">
-            <source src="http://127.0.0.1:8000/example" type="audio/mpeg">
-        </audio>
     </div>
 
     <h4 class="text-3xl ">История</h4>

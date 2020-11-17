@@ -1,8 +1,8 @@
 {
 	"background_color": "#ffffff",
-	"theme_color": "#333333",
-	"name": "TODO",
-	"short_name": "TODO",
+	"theme_color": "#603cba",
+	"name": "Mörkerfyr Radio",
+	"short_name": "Mörkerfyr",
 	"display": "minimal-ui",
 	"start_url": "/",
 	"icons": [

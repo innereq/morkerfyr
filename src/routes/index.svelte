@@ -1,6 +1,6 @@
 <script>
-	import Index from '../components/Index.svelte';
-	import RadioPlayer from '../components/RadioPlayer.svelte';
+	import Player from '../components/Player.svelte';
+	import History from '../components/History.svelte';
 	import Footer from '../components/Footer.svelte';
 </script>
 
@@ -13,10 +13,10 @@
 
 <div class="flex flex-col justify-between p-4 min-h-screen">
 	<div>
-		<Index/>
+		<Player/>
 	</div>
 	<div class="flex-1">
-		<RadioPlayer/>
+		<History/>
 	</div>
 	<div>
 		<Footer/>
