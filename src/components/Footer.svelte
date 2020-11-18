@@ -6,32 +6,39 @@
 
     let social = [
         { name: "Telegram", link: "https://t.me/morkerfyr"},
+        { name: "ВКонтакте", link: "https://vk.com/morkerfyr"},
         { name: "GitHub", link: "https://github.com/innereq/morkerfyr"}
     ];
 </script>
 
 <style>
-
+    footer {
+        padding-top: 1.25em;
+    }
 </style>
 
 <footer class="md:flex">
     <!-- Streamers -->
-    <div class="flex-1 text-center">
-        <h4 class="text-3xl font-bold">Ведущие</h4>
-        <ul>
-            {#each streamers as data}
-                <li><a href="{data.link}">{data.name}</a></li>
-            {/each}
-        </ul>
+    <div class="flex-1">
+        <div class="flex flex-col justify-center items-center">
+            <h4 class="text-3xl font-bold">Ведущие</h4>
+            <ul>
+                {#each streamers as data}
+                    <li><a href="{data.link}">{data.name}</a></li>
+                {/each}
+            </ul>
+        </div>
     </div>
 
     <!-- Social -->
-    <div class="flex-1 text-center">
-        <h4 class="text-3xl font-bold">Контакты</h4>
-        <ul>
-            {#each social as data}
-                <li><a href="{data.link}">{data.name}</a></li>
-            {/each}
-        </ul>
+    <div class="flex-1">
+        <div class="flex flex-col justify-center items-center">
+            <h4 class="text-3xl font-bold">Контакты</h4>
+            <ul>
+                {#each social as data}
+                    <li><a href="{data.link}">{data.name}</a></li>
+                {/each}
+            </ul>
+        </div>
     </div>
 </footer>
