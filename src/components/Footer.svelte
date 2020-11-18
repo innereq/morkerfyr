@@ -17,7 +17,7 @@
 <footer class="md:flex">
     <!-- Streamers -->
     <div class="flex-1 text-center">
-        <h4 class="text-3xl">Ведущие</h4>
+        <h4 class="text-3xl font-bold">Ведущие</h4>
         <ul>
             {#each streamers as data}
                 <li><a href="{data.link}">{data.name}</a></li>
@@ -27,7 +27,7 @@
 
     <!-- Social -->
     <div class="flex-1 text-center">
-        <h4 class="text-3xl ">Контакты</h4>
+        <h4 class="text-3xl font-bold">Контакты</h4>
         <ul>
             {#each social as data}
                 <li><a href="{data.link}">{data.name}</a></li>

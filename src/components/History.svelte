@@ -57,9 +57,9 @@
         <h4 id="nowplaying" class="text-3xl">🎶 {$nowplaying} 🎶</h4>
     </div>
 
-    <h4 class="text-3xl ">История</h4>
+    <h4 class="text-3xl font-bold">История</h4>
     <ul id="history">
-        {#each song_history as data}
+        {#each song_history.slice(1) as data}
             <li class="text-lg">{data.metadata.song}</li>
         {/each}
     </ul>
