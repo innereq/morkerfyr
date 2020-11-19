@@ -20,6 +20,10 @@
 <style>
 
 </style>
+
+<svelte:head>
+	<title>{post.title} | Mörkerfyr Reviews</title>
+</svelte:head>
   
 <!-- display the post -->
 <div class="md:flex flex-col justify-center items-center">
