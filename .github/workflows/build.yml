@@ -21,8 +21,7 @@ jobs:
 
       - name: "Prepare build for deploying"
         run: |
-          mkdir innereq
-          mv __sapper__/export innereq/morkerfyr.mle.party
+          mv __sapper__/export morkerfyr.mle.party
 
       - name: "Deploy to server"
         uses: appleboy/scp-action@master
@@ -31,7 +30,7 @@ jobs:
           username: ${{ secrets.CI_DEPLOYER_SSH_USER }}
           key: ${{ secrets.CI_DEPLOYER_SSH_KEY_INNEREQ }}
           port: ${{ secrets.CI_DEPLOYER_SSH_PORT }}
-          source: innereq
+          source: morkerfyr.mle.party
           target: /srv/http/morkerfyr.mle.party
           strip_components: 1
           rm: true
