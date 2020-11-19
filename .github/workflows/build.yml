@@ -8,8 +8,6 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-        with:
-          repository: vector-im/riot-web
 
       - name: "Install Node toolchain"
         uses: actions/setup-node@v1
