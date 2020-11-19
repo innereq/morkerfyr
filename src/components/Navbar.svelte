@@ -5,8 +5,7 @@
 	export let segment;
 	let theme;
 
-	// FIXME. Instead of using a proper “light” value it returns an empty value.
-	$: switchTheme = theme === "dark" ? "" : "dark";
+	$: switchTheme = theme === "dark" ? "light" : "dark";
 
 	afterUpdate(() => {
     	document.body.className = theme;
@@ -35,11 +34,7 @@
 	<div class="flex-1">
 		<div class="flex md:justify-center justify-end items-center">
 			<button on:click={() => { theme = switchTheme; }}>
-				{#if switchTheme }
-					🌙
-				{:else}
-					☀️
-				{/if}
+				💡
 			</button>
 		</div>
 	</div>
