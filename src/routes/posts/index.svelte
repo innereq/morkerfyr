@@ -3,7 +3,7 @@
   import {posts} from '../../posts'
 </script>
 
-<div class="flex flex-col justify-center items-center">
+<div class="md:flex flex-col justify-center items-center">
   <article class="prose">
     <h1>Mörkerfyr Reviews</h1>
     <ul>

@@ -20,7 +20,7 @@
 <footer class="md:flex">
     <!-- Streamers -->
     <div class="flex-1">
-        <div class="flex flex-col justify-center items-center">
+        <div class="flex flex-col justify-center items-center md:text-left text-center">
             <h4 class="text-3xl font-bold">Ведущие</h4>
             <ul>
                 {#each streamers as data}
@@ -32,7 +32,7 @@
 
     <!-- Social -->
     <div class="flex-1">
-        <div class="flex flex-col justify-center items-center">
+        <div class="flex flex-col justify-center items-center md:text-left text-center">
             <h4 class="text-3xl font-bold">Контакты</h4>
             <ul>
                 {#each social as data}

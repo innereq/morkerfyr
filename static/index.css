@@ -2460,6 +2460,14 @@ video {
   align-items:center
 }
 
+.justify-start{
+  justify-content:flex-start
+}
+
+.justify-end{
+  justify-content:flex-end
+}
+
 .justify-center{
   justify-content:center
 }
@@ -2614,6 +2622,14 @@ video {
 @media (min-width: 768px){
   .md\:flex{
     display:flex
+  }
+
+  .md\:justify-center{
+    justify-content:center
+  }
+
+  .md\:text-left{
+    text-align:left
   }
 }
 

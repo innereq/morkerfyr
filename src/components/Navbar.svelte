@@ -6,7 +6,7 @@
 
 	let theme;
 
-	$: switchTheme = theme === "dark" ? "" : "dark";
+	$: switchTheme = theme === "dark" ? "light" : "dark";
 
 	afterUpdate(() => {
     	document.body.className = theme;
@@ -31,13 +31,13 @@
 
 <nav class="flex">
 	<div class="flex-1">
-		<div class="flex justify-center items-center">
+		<div class="flex md:justify-center justify-start items-center">
 			<a class="{segment === undefined ? "selected" : undefined}" href=".">Радио</a>
 			<a rel=prefetch class="{segment === "posts" ? "selected" : undefined}" href="posts">Рецензии</a>
 		</div>
 	</div>
 	<div class="flex-1">
-		<div class="flex justify-center items-center">
+		<div class="flex md:justify-center justify-end items-center">
 			<button on:click={() => { theme = switchTheme; }}>
 				{#if switchTheme }
 					🌙

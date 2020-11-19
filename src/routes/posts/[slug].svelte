@@ -22,7 +22,7 @@
 </style>
   
 <!-- display the post -->
-<div class="flex flex-col justify-center items-center dark:text-gray-300">
+<div class="md:flex flex-col justify-center items-center">
   <article class="prose">
     <h1>{post.title}</h1>
     <h3>Опубликовано {post.date} за авторством {post.author}</h3>
