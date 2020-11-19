@@ -1,5 +1,16 @@
 <script>
-    export let segment;
+	import DarkMode from "svelte-dark-mode";
+	import { afterUpdate } from "svelte";
+
+	export let segment;
+
+	let theme;
+
+	$: switchTheme = theme === "dark" ? "" : "dark";
+
+	afterUpdate(() => {
+    	document.body.className = theme;
+  	});
 </script>
 
 <style>
@@ -16,6 +27,8 @@
 	}
 </style>
 
+<DarkMode bind:theme />
+
 <nav class="flex">
 	<div class="flex-1">
 		<div class="flex justify-center items-center">
@@ -25,7 +38,13 @@
 	</div>
 	<div class="flex-1">
 		<div class="flex justify-center items-center">
-
+			<button on:click={() => { theme = switchTheme; }}>
+				{#if switchTheme }
+					🌙
+				{:else}
+					☀️
+				{/if}
+			</button>
 		</div>
 	</div>
 </nav>

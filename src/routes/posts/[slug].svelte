@@ -16,9 +16,13 @@
   // this prop is filled from the result of the `preload()`
   export let post;
 </script>
+
+<style>
+
+</style>
   
 <!-- display the post -->
-<div class="flex flex-col justify-center items-center">
+<div class="flex flex-col justify-center items-center dark:text-gray-300">
   <article class="prose">
     <h1>{post.title}</h1>
     <h3>Опубликовано {post.date} за авторством {post.author}</h3>

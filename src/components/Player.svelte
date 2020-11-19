@@ -7,7 +7,7 @@
     onMount(() => {
         // Audio player.
         const controls = `
-            <div class="plyr__controls flex-col">
+            <div class="plyr__controls flex-col dark:text-gray-300">
                 <button type="button" class="plyr__control" aria-label="Play, {title}" data-plyr="play">
                     <svg class="icon--pressed" role="presentation"><use xlink:href="#plyr-pause"></use></svg>
                     <svg class="icon--not-pressed" role="presentation"><use xlink:href="#plyr-play"></use></svg>
@@ -38,7 +38,7 @@
     <!-- svelte-ignore a11y-missing-attribute -->
     <img src={logo} class="mx-auto rounded-full">
     <div class="absolute inset-0 mx-auto pt-12 text-center">
-        <h4 class="text-white text-3xl font-bold">Mörkerfyr Radio</h4>
+        <h4 class="text-white text-3xl font-bold dark:text-gray-300">Mörkerfyr Radio</h4>
     </div>
     <div class="absolute inset-0 mx-auto pt-48">
         <!-- svelte-ignore a11y-media-has-caption -->
