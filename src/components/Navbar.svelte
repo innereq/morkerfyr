@@ -3,10 +3,10 @@
 	import { afterUpdate } from "svelte";
 
 	export let segment;
-
 	let theme;
 
-	$: switchTheme = theme === "dark" ? "light" : "dark";
+	// FIXME. Instead of using a proper “light” value it returns an empty value.
+	$: switchTheme = theme === "dark" ? "" : "dark";
 
 	afterUpdate(() => {
     	document.body.className = theme;
