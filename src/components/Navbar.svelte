@@ -21,15 +21,11 @@
 	.selected {
 		font-weight: 700;
 	}
-	
-	nav {
-		padding-bottom: 1.25em;
-	}
 </style>
 
 <DarkMode bind:theme />
 
-<nav class="flex">
+<nav class="flex pb-5">
 	<div class="flex-1">
 		<div class="flex md:justify-center justify-start items-center">
 			<a class="{segment === undefined ? "selected" : undefined}" href=".">Радио</a>

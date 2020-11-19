@@ -12,12 +12,9 @@
 </script>
 
 <style>
-    footer {
-        padding-top: 1.25em;
-    }
 </style>
 
-<footer class="md:flex">
+<footer class="md:flex pt-5">
     <!-- Streamers -->
     <div class="flex-1">
         <div class="flex flex-col justify-center items-center md:text-left text-center">

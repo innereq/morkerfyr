@@ -34,7 +34,7 @@
     }
 </style>
 
-<div class="relative">
+<div class="relative pb-5">
     <!-- svelte-ignore a11y-missing-attribute -->
     <img src={logo} class="mx-auto rounded-full">
     <div class="absolute inset-0 mx-auto pt-12 text-center">

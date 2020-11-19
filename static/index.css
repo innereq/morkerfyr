@@ -2516,6 +2516,14 @@ video {
   padding:1rem
 }
 
+.pt-5{
+  padding-top:1.25rem
+}
+
+.pb-5{
+  padding-bottom:1.25rem
+}
+
 .pt-12{
   padding-top:3rem
 }
