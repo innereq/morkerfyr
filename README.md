@@ -11,7 +11,7 @@ and [Tailwind CSS](https://tailwindcss.com/).
 
 ## Features
 
-- Plays radio stream from RSAS (and any Icecast-compatible server.)
+- Plays radio stream from RSAS (and any Icecast-compatible server)
 - Shows playing track and history of played tracks (using RSAS-exclusive API endpoints)
 - Dark theme switcher
 - Markdown-powered blog
