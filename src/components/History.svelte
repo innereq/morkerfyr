@@ -1,13 +1,13 @@
 <script>
   import { RADIO_HOST, RADIO_MOUNT } from "../../morkerfyr.config";
   import { onMount } from "svelte";
-  import { nowplaying } from "../stores";
+  import { NOWPLAYING } from "../stores";
 
   // Init global value for now playing song.
   let songCurrent;
   let songHistory = [];
   // https://svelte.dev/tutorial/writable-stores
-  const unsubscribe = nowplaying.subscribe((value) => {
+  const unsubscribe = NOWPLAYING.subscribe((value) => {
     songCurrent = value;
   });
 
@@ -27,7 +27,7 @@
         // Print now playing song.
         console.log("Now playing: " + songCurrent);
         // Change global state of now playing song.
-        nowplaying.set(songCurrent);
+        NOWPLAYING.set(songCurrent);
 
         // Print history of played songs.
         try {
@@ -58,7 +58,7 @@
 
 <div class="text-center">
   <div class="mx-auto">
-    <h4 class="text-3xl">🎶 {$nowplaying} 🎶</h4>
+    <h4 class="text-3xl">🎶 {$NOWPLAYING} 🎶</h4>
   </div>
 
   <h4 class="text-3xl font-bold">История</h4>
