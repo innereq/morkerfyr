@@ -1,10 +1,10 @@
 <script>
-  import { radio_host, radio_mount } from "../../morkerfyr.config";
+  import { RADIO_HOST, RADIO_MOUNT } from "../../morkerfyr.config";
   import { onMount } from "svelte";
   import Plyr from "plyr";
 
-  let logo = "beacon_couple.webp";
-  let radio = radio_host + radio_mount;
+  let logoImage = "beacon_couple.webp";
+  let radioStream = RADIO_HOST + RADIO_MOUNT;
 
   onMount(() => {
     // Audio player.
@@ -39,7 +39,7 @@
 
 <div class="relative pb-5">
   <!-- svelte-ignore a11y-missing-attribute -->
-  <img src={logo} class="mx-auto rounded-full" />
+  <img src={logoImage} class="mx-auto rounded-full" />
   <div class="absolute inset-0 mx-auto pt-12 text-center">
     <h4 class="text-white text-3xl font-bold dark:text-gray-300">
       Mörkerfyr Radio
@@ -48,7 +48,7 @@
   <div class="absolute inset-0 mx-auto pt-48">
     <!-- svelte-ignore a11y-media-has-caption -->
     <audio id="player" controls="controls" preload="none">
-      <source src="{radio}" type="audio/mpeg" />
+      <source src="{radioStream}" type="audio/mpeg" />
     </audio>
   </div>
 </div>

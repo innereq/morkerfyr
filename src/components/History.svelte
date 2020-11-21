@@ -1,41 +1,41 @@
 <script>
-  import { radio_host, radio_mount } from "../../morkerfyr.config";
+  import { RADIO_HOST, RADIO_MOUNT } from "../../morkerfyr.config";
   import { onMount } from "svelte";
   import { nowplaying } from "../stores";
 
   // Init global value for now playing song.
-  let song_current;
-  let song_history = [];
+  let songCurrent;
+  let songHistory = [];
   // https://svelte.dev/tutorial/writable-stores
   const unsubscribe = nowplaying.subscribe((value) => {
-    song_current = value;
+    songCurrent = value;
   });
 
   // Do things only when DOM is rendered.
   onMount(() => {
-    var url_stream = radio_host + radio_mount;
-    var url_metadata = url_stream + "/metadata";
-    var url_history = url_metadata + "-history";
+    var urlStream = RADIO_HOST + RADIO_MOUNT;
+    var urlMetadata = urlStream + "/metadata";
+    var urlHistory = urlMetadata + "-history";
 
     try {
-      var eventSource = new EventSource(url_metadata);
+      var eventSource = new EventSource(urlMetadata);
 
       eventSource.onmessage = function (event) {
         var metadata = JSON.parse(event.data);
-        song_current = metadata["metadata"];
+        songCurrent = metadata["metadata"];
 
         // Print now playing song.
-        console.log("Now playing: " + song_current);
+        console.log("Now playing: " + songCurrent);
         // Change global state of now playing song.
-        nowplaying.set(song_current);
+        nowplaying.set(songCurrent);
 
         // Print history of played songs.
         try {
-          fetch(url_history)
+          fetch(urlHistory)
             .then((res) => res.json())
             .then((out) => {
-              song_history = out;
-              console.log("History: ", song_history);
+              songHistory = out;
+              console.log("History: ", songHistory);
             });
         } catch (error) {
           console.log(
@@ -58,12 +58,12 @@
 
 <div class="text-center">
   <div class="mx-auto">
-    <h4 id="nowplaying" class="text-3xl">🎶 {$nowplaying} 🎶</h4>
+    <h4 class="text-3xl">🎶 {$nowplaying} 🎶</h4>
   </div>
 
   <h4 class="text-3xl font-bold">История</h4>
-  <ul id="history">
-    {#each song_history.slice(1) as data}
+  <ul>
+    {#each songHistory.slice(1) as data}
       <li class="text-lg">{data.metadata.song}</li>
     {/each}
   </ul>

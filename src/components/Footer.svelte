@@ -1,5 +1,5 @@
 <script>
-  import { radio_streamers, radio_social } from "../../morkerfyr.config";
+  import { RADIO_STREAMERS, RADIO_SOCIAL } from "../../morkerfyr.config";
 </script>
 
 <style>
@@ -12,7 +12,7 @@
       class="flex flex-col justify-center items-center md:text-left text-center">
       <h4 class="text-3xl font-bold">Ведущие</h4>
       <ul>
-        {#each radio_streamers as data}
+        {#each RADIO_STREAMERS as data}
           <li><a href={data.link}>{data.name}</a></li>
         {/each}
       </ul>
@@ -25,7 +25,7 @@
       class="flex flex-col justify-center items-center md:text-left text-center">
       <h4 class="text-3xl font-bold">Контакты</h4>
       <ul>
-        {#each radio_social as data}
+        {#each RADIO_SOCIAL as data}
           <li><a href={data.link}>{data.name}</a></li>
         {/each}
       </ul>
