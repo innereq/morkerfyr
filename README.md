@@ -51,7 +51,7 @@ $ cat config.xml
 
 $ rsas -c config.xml
 ```
-3. Start stream with `butt` or any other Icecast-compatible client
+2. Start stream with `butt` or any other Icecast-compatible client
 3. Clone repository and install dependencies:
 ```
 git clone https://github.com/innereq/morkerfyr && cd morkerfyr
