@@ -11,7 +11,7 @@
     "export": "npm run build:css && sapper export --legacy",
     "start:dev": "sapper dev",
     "start": "node __sapper__/build",
-    "format": "prettier ."
+    "format": "prettier --write --plugin-search-dir=. '*.js' 'src/*.js' 'src/**/*.svelte'"
   },
   "dependencies": {
     "compression": "^1.7.1",
@@ -40,6 +40,7 @@
     "postcss-load-config": "^3.0.0",
     "postcss-nested": "^5.0.1",
     "prettier": "^2.2.0",
+    "prettier-plugin-svelte": "^1.4.1",
     "rollup": "^2.3.4",
     "rollup-plugin-glob": "^1.0.2",
     "rollup-plugin-svelte": "^6.1.1",

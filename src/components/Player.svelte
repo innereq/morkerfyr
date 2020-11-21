@@ -1,49 +1,54 @@
 <script>
-    import { onMount } from 'svelte';
-    import Plyr from 'plyr';
+  import { radio_host, radio_mount } from "../../morkerfyr.config";
+  import { onMount } from "svelte";
+  import Plyr from "plyr";
 
-    let logo = "beacon_couple.webp";
+  let logo = "beacon_couple.webp";
+  let radio = radio_host + radio_mount;
 
-    onMount(() => {
-        // Audio player.
-        const controls = `
-            <div class="plyr__controls flex-col dark:text-gray-300">
-                <button type="button" class="plyr__control" aria-label="Play, {title}" data-plyr="play">
-                    <svg class="icon--pressed" role="presentation"><use xlink:href="#plyr-pause"></use></svg>
-                    <svg class="icon--not-pressed" role="presentation"><use xlink:href="#plyr-play"></use></svg>
-                </button>
-                <button type="button" class="plyr__control" aria-label="Mute" data-plyr="mute">
-                    <svg class="icon--pressed" role="presentation"><use xlink:href="#plyr-muted"></use></svg>
-                    <svg class="icon--not-pressed" role="presentation"><use xlink:href="#plyr-volume"></use></svg>
-                </button>
-                <div class="plyr__volume">
-                    <input data-plyr="volume" type="range" min="0" max="1" step="0.05" value="1" autocomplete="off" aria-label="Volume">
-                </div>
-                </button>
-            </div>
-            `;
-        const player = new Plyr('#player', {
-            controls,
-        });
+  onMount(() => {
+    // Audio player.
+    // https://github.com/sampotts/plyr/blob/master/CONTROLS.md
+    const controls = `
+      <div class="plyr__controls flex-col dark:text-gray-300">
+        <button type="button" class="plyr__control" aria-label="Play, {title}" data-plyr="play">
+          <svg class="icon--pressed" role="presentation"><use xlink:href="#plyr-pause"></use></svg>
+          <svg class="icon--not-pressed" role="presentation"><use xlink:href="#plyr-play"></use></svg>
+        </button>
+        <button type="button" class="plyr__control" aria-label="Mute" data-plyr="mute">
+          <svg class="icon--pressed" role="presentation"><use xlink:href="#plyr-muted"></use></svg>
+          <svg class="icon--not-pressed" role="presentation"><use xlink:href="#plyr-volume"></use></svg>
+        </button>
+          <div class="plyr__volume">
+            <input data-plyr="volume" type="range" min="0" max="1" step="0.05" value="1" autocomplete="off" aria-label="Volume">
+          </div>
+        </button>
+      </div>
+    `;
+    const player = new Plyr("#player", {
+      controls,
     });
+  });
 </script>
 
 <style>
-    img {
-        max-width: 341px;
-    }
+  img {
+    max-width: 341px;
+  }
 </style>
 
 <div class="relative pb-5">
-    <!-- svelte-ignore a11y-missing-attribute -->
-    <img src={logo} class="mx-auto rounded-full">
-    <div class="absolute inset-0 mx-auto pt-12 text-center">
-        <h4 class="text-white text-3xl font-bold dark:text-gray-300">Mörkerfyr Radio</h4>
-    </div>
-    <div class="absolute inset-0 mx-auto pt-48">
-        <!-- svelte-ignore a11y-media-has-caption -->
-        <audio id="player" controls="controls" preload="none">
-            <source src="https://morkerfyr.mle.party:8443/stream" type="audio/mpeg">
-        </audio>
-    </div>
+  <!-- svelte-ignore a11y-missing-attribute -->
+  <img src={logo} class="mx-auto rounded-full" />
+  <div class="absolute inset-0 mx-auto pt-12 text-center">
+    <h4 class="text-white text-3xl font-bold dark:text-gray-300">
+      Mörkerfyr Radio
+    </h4>
+  </div>
+  <div class="absolute inset-0 mx-auto pt-48">
+    <!-- svelte-ignore a11y-media-has-caption -->
+    <audio id="player" controls="controls" preload="none">
+      <source src="{radio}" type="audio/mpeg" />
+    </audio>
+  </div>
 </div>

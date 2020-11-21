@@ -1,30 +1,29 @@
 <script context="module">
-    // import the logic for finding a post based on slug
-    import { findPost } from '../../posts';
-  
-    // sapper calls this to load our data
-    export function preload(page) {
-      // find the post based on the slug param
-      const post = findPost(page.params.slug);
-  
-      // return a list of props
-      return { post };
-    }
+  // import the logic for finding a post based on slug
+  import { findPost } from "../../posts";
+
+  // sapper calls this to load our data
+  export function preload(page) {
+    // find the post based on the slug param
+    const post = findPost(page.params.slug);
+
+    // return a list of props
+    return { post };
+  }
 </script>
-  
+
 <script>
   // this prop is filled from the result of the `preload()`
   export let post;
 </script>
 
 <style>
-
 </style>
 
 <svelte:head>
-	<title>{post.title} | Mörkerfyr Reviews</title>
+  <title>{post.title} | Mörkerfyr Reviews</title>
 </svelte:head>
-  
+
 <!-- display the post -->
 <div class="md:flex flex-col justify-center items-center">
   <article class="prose">
