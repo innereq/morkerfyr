@@ -2,6 +2,8 @@
 title: Paysage d'Hiver ‎— Im Wald
 author: Fuerlee
 date: 2020-11-08
+tags:
+  - black metal
 ---
 
 <iframe style="border: 0; width: 100%; height: 472px;" src="https://bandcamp.com/EmbeddedPlayer/album=2558868122/size=large/bgcol=ffffff/linkcol=0687f5/artwork=small/transparent=true/" seamless><a href="https://paysagedhiver.bandcamp.com/album/im-wald">Im Wald by Paysage d&#39;Hiver</a></iframe>

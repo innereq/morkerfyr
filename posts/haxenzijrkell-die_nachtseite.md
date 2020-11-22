@@ -2,6 +2,8 @@
 title: Häxenzijrkell — Die Nachtseite
 author: Fuerlee
 date: 2020-10-01
+tags:
+  - black metal
 ---
 
 <iframe style="border: 0; width: 100%; height: 241px;" src="https://bandcamp.com/EmbeddedPlayer/album=2866496272/size=large/bgcol=ffffff/linkcol=0687f5/artwork=small/transparent=true/" seamless><a href="https://haexenzijrkell.bandcamp.com/album/die-nachtseite">Die Nachtseite by Häxenzijrkell</a></iframe>

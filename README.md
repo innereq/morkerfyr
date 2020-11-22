@@ -20,7 +20,7 @@ and [Tailwind CSS](https://tailwindcss.com/).
 ### TODO
 
 - RSS feed for the blog
-- Tags for blog posts
+- Clickable tags for blog posts
 - Play radio when lurking other pages
 
 ## Development

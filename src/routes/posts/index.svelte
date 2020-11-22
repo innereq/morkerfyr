@@ -14,7 +14,7 @@
       <!-- iterate through each post -->
       {#each posts as post}
         <!-- link article to /posts/$slug -->
-        <li><a href={`/posts/${post.slug}`}>{post.title}</a></li>
+        <li><a href={`/posts/${post.slug}`}>{post.title}</a><span class="pl-4 opacity-50">[{post.tags}]</span></li>
       {/each}
     </ul>
   </article>

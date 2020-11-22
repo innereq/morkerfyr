@@ -2,6 +2,9 @@
 title: Toadeater — Bit To Ewigen Daogen
 author: Fuerlee
 date: 2020-10-11
+tags:
+  - black metal
+  - crust punk
 ---
 
 <iframe style="border: 0; width: 100%; height: 307px;" src="https://bandcamp.com/EmbeddedPlayer/album=2612117501/size=large/bgcol=ffffff/linkcol=0687f5/artwork=small/transparent=true/" seamless><a href="https://toadeater.bandcamp.com/album/bit-to-ewigen-daogen">Bit To Ewigen Daogen by Toadeater</a></iframe>

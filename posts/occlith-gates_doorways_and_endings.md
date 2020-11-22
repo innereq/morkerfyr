@@ -2,6 +2,8 @@
 title: Occlith — Gates, Doorways, and Endings
 author: Fuerlee
 date: 2020-11-16
+tags:
+  - doom metal
 ---
 
 <iframe style="border: 0; width: 100%; height: 307px;" src="https://bandcamp.com/EmbeddedPlayer/album=1051549156/size=large/bgcol=ffffff/linkcol=0687f5/artwork=small/transparent=true/" seamless><a href="https://transylvaniantapes.bandcamp.com/album/occlith-gates-doorways-and-endings">OCCLITH - GATES, DOORWAYS, AND ENDINGS by OCCLITH</a></iframe>
