@@ -19,8 +19,10 @@ and [Tailwind CSS](https://tailwindcss.com/).
 - It's ugly! (plz halp)
 
 ### TODO
+
 - Clickable tags for blog posts
 - Play radio when lurking other pages
+- Fetch metadata from secondary source when the main source is down
 
 ## Development
 
