@@ -19,7 +19,7 @@ function renderXmlRssFeed(posts) {
             <title>${post.title}</title>
             <link>${SITE_URL}/posts/${post.slug}</link>
             <guid isPermaLink="false">${SITE_URL}/posts/${post.slug}</guid>
-            <description>Рецензия на альбом ${post.title}. Теги: ${post.tags}.</description>
+            <description>Рецензия на альбом ${post.title}. Теги: ${post.tags.join(', ')}.</description>
             <pubDate>${new Date(post.date).toUTCString()}</pubDate>
           </item>
         `).join('\n')}

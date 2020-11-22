@@ -19,7 +19,7 @@ function transform({ filename, html, metadata }) {
 }
 
 // provide a way to find a post by slug
-export function findPost(slug) {
+export function findPostBySlug(slug) {
   // use lodash to find by field name:
   return _.find(posts, { slug });
 }

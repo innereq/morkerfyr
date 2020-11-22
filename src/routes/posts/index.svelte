@@ -19,7 +19,7 @@
         <!-- link article to /posts/$slug -->
         <li>
           <a href={`/posts/${post.slug}`}>{post.title}</a><span
-            class="pl-4 opacity-50">[{post.tags}]</span>
+            class="pl-4 opacity-50">[{post.tags.join(', ')}]</span>
         </li>
       {/each}
     </ul>

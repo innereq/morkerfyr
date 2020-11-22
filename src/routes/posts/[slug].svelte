@@ -1,11 +1,11 @@
 <script context="module">
   // import the logic for finding a post based on slug
-  import { findPost } from "../../posts";
+  import { findPostBySlug } from "../../posts";
 
   // sapper calls this to load our data
   export function preload(page) {
     // find the post based on the slug param
-    const post = findPost(page.params.slug);
+    const post = findPostBySlug(page.params.slug);
 
     // return a list of props
     return { post };
@@ -15,8 +15,6 @@
 <script>
   // this prop is filled from the result of the `preload()`
   export let post;
-
-  let prettyDate = post.date.toLocaleDateString("ru-RU");
 </script>
 
 <style>
@@ -37,8 +35,8 @@
   <article class="prose">
     <div id="title">
       <h1>{post.title}</h1>
-      <h3>Опубликовано {prettyDate} за авторством {post.author}</h3>
-      <h6>Теги: {post.tags}</h6>
+      <h3>Опубликовано {post.date.toLocaleDateString("ru-RU")} за авторством {post.author}</h3>
+      <h6>Теги: {post.tags.join(', ')}</h6>
     </div>
     {@html post.html}
   </article>
