@@ -12,7 +12,7 @@ function transform({ filename, html, metadata }) {
   const slug = filename.replace(/\.md$/, "");
 
   // convert date string into a proper `Date`
-  const date = new Date(metadata.date).toLocaleDateString("ru-RU");
+  const date = new Date(metadata.date);
 
   // return the new shape
   return { ...metadata, filename, html, slug, date };

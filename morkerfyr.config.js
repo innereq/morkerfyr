@@ -12,5 +12,5 @@ module.exports = Object.freeze({
     { name: "Telegram", link: "https://t.me/morkerfyr" },
     { name: "ВКонтакте", link: "https://vk.com/morkerfyr" },
     { name: "GitHub", link: "https://github.com/innereq/morkerfyr" },
-  ]
+  ],
 });

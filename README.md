@@ -15,11 +15,10 @@ and [Tailwind CSS](https://tailwindcss.com/).
 - Shows playing track and history of played tracks (using RSAS-exclusive API endpoints)
 - Dark theme switcher
 - Markdown-powered blog
+- RSS feed and sitemap.xml for the blog
 - It's ugly! (plz halp)
 
 ### TODO
-
-- RSS feed for the blog
 - Clickable tags for blog posts
 - Play radio when lurking other pages
 

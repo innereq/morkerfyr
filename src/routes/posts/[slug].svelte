@@ -15,6 +15,8 @@
 <script>
   // this prop is filled from the result of the `preload()`
   export let post;
+
+  let prettyDate = post.date.toLocaleDateString("ru-RU");
 </script>
 
 <style>
@@ -35,7 +37,7 @@
   <article class="prose">
     <div id="title">
       <h1>{post.title}</h1>
-      <h3>Опубликовано {post.date} за авторством {post.author}</h3>
+      <h3>Опубликовано {prettyDate} за авторством {post.author}</h3>
       <h6>Теги: {post.tags}</h6>
     </div>
     {@html post.html}
