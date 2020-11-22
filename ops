@@ -1,1 +1,1 @@
-{"version":1,"ops":[{"type":1,"author":{"id":"39f6ab38a8134c75308455a5378dbb8fac3770ba"},"timestamp":1606067797,"title":"test!","message":"","files":null}]}
+{"version":1,"ops":[{"type":8,"author":{"id":"39f6ab38a8134c75308455a5378dbb8fac3770ba"},"timestamp":1606068032,"target":"5c7580eb493a431a76c85727ea9ca510f33463c591c0405d4d6d8851d9de01e8","new_metadata":{"github-id":"MDU6SXNzdWU3NDgzMDQ1NzU=","github-url":"https://github.com/innereq/morkerfyr/issues/1"}}]}
