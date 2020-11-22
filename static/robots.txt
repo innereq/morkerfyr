@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: 
+Sitemap: https://morkerfyr.mle.party/sitemap.xml
