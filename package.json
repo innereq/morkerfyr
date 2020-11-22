@@ -11,7 +11,7 @@
     "export": "npm run build:css && sapper export --legacy",
     "start:dev": "sapper dev",
     "start": "node __sapper__/build",
-    "format": "prettier --write --plugin-search-dir=. '*.js' 'src/*.js' 'src/**/*.svelte'"
+    "format": "prettier --write --plugin-search-dir=. '*.js' 'src/*.js' 'src/**/*.js' 'src/**/*.svelte'"
   },
   "dependencies": {
     "compression": "^1.7.1",

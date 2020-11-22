@@ -1,7 +1,7 @@
-import { posts } from '../../posts';
-import { SITE_URL } from '../../../morkerfyr.config';
+import { posts } from "../../posts";
+import { SITE_URL } from "../../../morkerfyr.config";
 
-function renderXmlRssFeed(posts) { 
+function renderXmlRssFeed(posts) {
   return `<?xml version="1.0" encoding="UTF-8" ?>
     <rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
       <channel>
@@ -14,23 +14,29 @@ function renderXmlRssFeed(posts) {
           <title>Mörkerfyr Reviews</title>
           <link>${SITE_URL}</link>
         </image>
-        ${posts.map(post => `
+        ${posts
+          .map(
+            (post) => `
           <item>
             <title>${post.title}</title>
             <link>${SITE_URL}/posts/${post.slug}</link>
             <guid isPermaLink="false">${SITE_URL}/posts/${post.slug}</guid>
-            <description>Рецензия на альбом ${post.title}. Теги: ${post.tags.join(', ')}.</description>
+            <description>Рецензия на альбом ${
+              post.title
+            }. Теги: ${post.tags.join(", ")}.</description>
             <pubDate>${new Date(post.date).toUTCString()}</pubDate>
           </item>
-        `).join('\n')}
+        `
+          )
+          .join("\n")}
       </channel>
     </rss>`;
 }
 
 export function get(req, res) {
   res.writeHead(200, {
-    'Cache-Control': `max-age=0, s-max-age=${600}`, // 10 minutes
-    'Content-Type': 'application/rss+xml'
+    "Cache-Control": `max-age=0, s-max-age=${600}`, // 10 minutes
+    "Content-Type": "application/rss+xml",
   });
 
   const feed = renderXmlRssFeed(posts);
