@@ -18,6 +18,12 @@
 </script>
 
 <style>
+  #title h1,
+  #title h3,
+  #title h6 {
+    margin-bottom: 0;
+    margin-top: 0;
+  }
 </style>
 
 <svelte:head>
@@ -27,8 +33,11 @@
 <!-- display the post -->
 <div class="md:flex flex-col justify-center items-center">
   <article class="prose">
-    <h1>{post.title}</h1>
-    <h3>Опубликовано {post.date} за авторством {post.author}</h3>
+    <div id="title">
+      <h1>{post.title}</h1>
+      <h3>Опубликовано {post.date} за авторством {post.author}</h3>
+      <h6>Теги: {post.tags}</h6>
+    </div>
     {@html post.html}
   </article>
 </div>
