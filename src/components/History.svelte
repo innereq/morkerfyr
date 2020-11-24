@@ -54,7 +54,7 @@
       var eventSourceSecondary = new ReconnectingEventSource.default(urlMetadataSecondary);
 
       eventSourceSecondary.onmessage = function (event) {
-        if (!songCurrent) {
+        if (songCurrent === undefined) {
           var metadata = JSON.parse(event.data);
           songCurrent = metadata["metadata"];
 
