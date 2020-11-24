@@ -3,6 +3,7 @@ module.exports = Object.freeze({
 
   RADIO_HOST: "https://morkerfyr.mle.party:8443",
   RADIO_MOUNT: "/stream",
+  RADIO_MOUNT_SECONDARY: "/secondary",
 
   RADIO_STREAMERS: [
     { name: "Fuerlee", link: "https://t.me/fuerlee" },

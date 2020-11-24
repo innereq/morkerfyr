@@ -2569,6 +2569,11 @@ readdirp@~3.5.0:
   dependencies:
     picomatch "^2.2.1"
 
+reconnecting-eventsource@^1.1.0:
+  version "1.1.0"
+  resolved "https://registry.yarnpkg.com/reconnecting-eventsource/-/reconnecting-eventsource-1.1.0.tgz#df55bde4c575babadeca3c730a2f204e8a1d42de"
+  integrity sha512-KJbQG1iZOC4IRBccT1mOodzKp5YM9gC1H4L6LgDmmXx+4U3pabhb+UF0UI0u+Lck1cvb4oyAuihaQqTbKnslqQ==
+
 reduce-css-calc@^2.1.6:
   version "2.1.7"
   resolved "https://registry.yarnpkg.com/reduce-css-calc/-/reduce-css-calc-2.1.7.tgz#1ace2e02c286d78abcd01fd92bfe8097ab0602c2"

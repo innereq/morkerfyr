@@ -1,7 +1,8 @@
 <script>
-  import { RADIO_HOST, RADIO_MOUNT } from "../../morkerfyr.config";
-  import { onMount } from "svelte";
+  import { RADIO_HOST, RADIO_MOUNT, RADIO_MOUNT_SECONDARY } from "../../morkerfyr.config";
   import { NOWPLAYING } from "../stores";
+  import { onMount } from "svelte";
+  import ReconnectingEventSource from "reconnecting-eventsource";
 
   // Init global value for now playing song.
   let songCurrent;
@@ -13,14 +14,18 @@
 
   // Do things only when DOM is rendered.
   onMount(() => {
-    var urlStream = RADIO_HOST + RADIO_MOUNT;
-    var urlMetadata = urlStream + "/metadata";
-    var urlHistory = urlMetadata + "-history";
+    var urlStreamMain = RADIO_HOST + RADIO_MOUNT;
+    var urlMetadataMain = urlStreamMain + "/metadata";
+    var urlHistoryMain = urlMetadataMain + "-history";
+
+    var urlStreamSecondary = RADIO_HOST + RADIO_MOUNT_SECONDARY;
+    var urlMetadataSecondary = urlStreamSecondary + "/metadata";
+    var urlHistorySecondary = urlMetadataSecondary + "-history";
 
     try {
-      var eventSource = new EventSource(urlMetadata);
+      var eventSourceMain = new ReconnectingEventSource.default(urlMetadataMain);
 
-      eventSource.onmessage = function (event) {
+      eventSourceMain.onmessage = function (event) {
         var metadata = JSON.parse(event.data);
         songCurrent = metadata["metadata"];
 
@@ -31,25 +36,52 @@
 
         // Print history of played songs.
         try {
-          fetch(urlHistory)
+          fetch(urlHistoryMain)
             .then((res) => res.json())
             .then((out) => {
               songHistory = out;
               console.log("History: ", songHistory);
             });
         } catch (error) {
-          console.log(
-            "Can't get history of played songs! (JSON parsing is failed)"
-          );
           console.log(error);
         }
       };
     } catch (error) {
-      console.log(
-        "Can't get now playing song! (EventSource initializaion is failed)"
-      );
       console.log(error);
     }
+
+    try {
+      var eventSourceSecondary = new ReconnectingEventSource.default(urlMetadataSecondary);
+
+      eventSourceSecondary.onmessage = function (event) {
+        if (!songCurrent) {
+          var metadata = JSON.parse(event.data);
+          songCurrent = metadata["metadata"];
+
+          // Print now playing song.
+          console.log("Now playing: " + songCurrent);
+          // Change global state of now playing song.
+          NOWPLAYING.set(songCurrent);
+        }
+
+        // Print history of played songs.
+        try {
+          if (!songHistory.length) {
+            fetch(urlHistorySecondary)
+              .then((res) => res.json())
+              .then((out) => {
+                songHistory = out;
+                console.log("History: ", songHistory);
+              });
+            }
+        } catch (error) {
+          console.log(error);
+        }
+      };
+    } catch(error) {
+      console.log(error);
+    }
+
   });
 </script>
 
