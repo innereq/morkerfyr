@@ -22,7 +22,7 @@
 
   // Get JSON from EventSource stream and set now playing track from it.
   function setNowPlayingSong(event) {
-    var metadata = JSON.parse(event.data);
+    const metadata = JSON.parse(event.data);
     songCurrent = metadata["metadata"];
     // Print now playing song.
     console.log("Now playing: " + songCurrent);
@@ -48,15 +48,15 @@
   // Do things only when DOM is rendered.
   onMount(() => {
     // Main radio mount. Should be used when everything is fine.
-    var radioStreamMain = new Radio(RADIO_MOUNT);
+    const radioStreamMain = new Radio(RADIO_MOUNT);
     // Secondary radio mount. Should be used if the main one is down. Fallback.
-    var radioStreamSecondary = new Radio(RADIO_MOUNT_SECONDARY);
+    const radioStreamSecondary = new Radio(RADIO_MOUNT_SECONDARY);
 
     try {
-      var eventSourceMain = new ReconnectingEventSource.default(
+      const eventSourceMain = new ReconnectingEventSource.default(
         radioStreamMain.metadata
       );
-      var eventSourceSecondary = new ReconnectingEventSource.default(
+      const eventSourceSecondary = new ReconnectingEventSource.default(
         radioStreamSecondary.metadata
       );
 

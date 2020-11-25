@@ -6,7 +6,7 @@
   export let segment;
 
   // Theme switcher.
-  // https://metonym.github.io/svelte-dark-mode/
+  // https://metonym.github.io/svelte-dark-mode
   // https://github.com/metonym/svelte-dark-mode
   let theme;
   $: switchTheme = theme === "dark" ? "light" : "dark";
