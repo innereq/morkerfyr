@@ -30,19 +30,12 @@
 
   // Update and print history of last played songs.
   function updatePlayedSongsHistory(history) {
-    try {
-      fetch(history)
-        .then((res) => res.json())
-        .then((out) => {
-          songHistory = out;
-          console.log("History: ", songHistory);
-        });
-
-      mainRadioMountIsAlive = true;
-    } catch (error) {
-      mainRadioMountIsAlive = false;
-      console.log(error);
-    }
+    fetch(history)
+      .then((res) => res.json())
+      .then((out) => {
+        songHistory = out;
+        console.log("History: ", songHistory);
+      });
   }
 
   // Do things only when DOM is rendered.
@@ -61,19 +54,29 @@
       );
 
       eventSourceMain.onmessage = function (event) {
-        setNowPlayingSong(event);
-        updatePlayedSongsHistory(radioStreamMain.history);
-      };
-
-      eventSourceSecondary.onmessage = function (event) {
-        // If value of now playing song on the main radio mount is empty,
-        // replace it with value from the secondary radio mount. Fallback.
-        //
-        // If array of last played songs on the main radio mount is empty,
-        // replace it with array from the secondary radio mount. Fallback.
-        if (mainRadioMountIsAlive === false) {
+        try {
           setNowPlayingSong(event);
           updatePlayedSongsHistory(radioStreamMain.history);
+          mainRadioMountIsAlive = true;
+        } catch (error) {
+          mainRadioMountIsAlive = false;
+          console.log(error);
+        }
+      };
+
+      // If value of now playing song on the main radio mount is empty,
+      // replace it with value from the secondary radio mount. Fallback.
+      //
+      // If array of last played songs on the main radio mount is empty,
+      // replace it with array from the secondary radio mount. Fallback.
+      if (mainRadioMountIsAlive === false) {
+        eventSourceSecondary.onmessage = function (event) {
+          try {
+            setNowPlayingSong(event);
+            updatePlayedSongsHistory(radioStreamMain.history);
+          } catch (error) {
+            console.log(error);
+          }
         }
       };
     } catch (error) {
