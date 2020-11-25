@@ -1,5 +1,9 @@
 <script>
-  import { RADIO_HOST, RADIO_MOUNT, RADIO_MOUNT_SECONDARY } from "../../morkerfyr.config";
+  import {
+    RADIO_HOST,
+    RADIO_MOUNT,
+    RADIO_MOUNT_SECONDARY,
+  } from "../../morkerfyr.config";
   import { onMount } from "svelte";
   import ReconnectingEventSource from "reconnecting-eventsource";
 
@@ -21,8 +25,12 @@
     var urlHistorySecondary = urlMetadataSecondary + "-history";
 
     try {
-      var eventSourceMain = new ReconnectingEventSource.default(urlMetadataMain);
-      var eventSourceSecondary = new ReconnectingEventSource.default(urlMetadataSecondary);
+      var eventSourceMain = new ReconnectingEventSource.default(
+        urlMetadataMain
+      );
+      var eventSourceSecondary = new ReconnectingEventSource.default(
+        urlMetadataSecondary
+      );
 
       eventSourceMain.onmessage = function (event) {
         // Get JSON from EventSource stream and get now playing track from it.
@@ -40,8 +48,7 @@
               console.log("History: ", songHistory);
             });
 
-        mainRadioMountIsAlive = true;
-
+          mainRadioMountIsAlive = true;
         } catch (error) {
           mainRadioMountIsAlive = false;
           console.log(error);
@@ -75,11 +82,9 @@
           console.log(error);
         }
       };
-
     } catch (error) {
       console.log(error);
     }
-
   });
 </script>
 
