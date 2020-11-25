@@ -20,6 +20,31 @@
     }
   }
 
+  // Get JSON from EventSource stream and set now playing track from it.
+  function setNowPlayingSong(event) {
+    var metadata = JSON.parse(event.data);
+    songCurrent = metadata["metadata"];
+    // Print now playing song.
+    console.log("Now playing: " + songCurrent);
+  }
+
+  // Update and print history of latest played songs.
+  function updatePlayedSongsHistory(history) {
+    try {
+      fetch(history)
+        .then((res) => res.json())
+        .then((out) => {
+          songHistory = out;
+          console.log("History: ", songHistory);
+        });
+
+      mainRadioMountIsAlive = true;
+    } catch (error) {
+      mainRadioMountIsAlive = false;
+      console.log(error);
+    }
+  }
+
   // Do things only when DOM is rendered.
   onMount(() => {
     // Main radio mount. Should be used when everything is fine.
@@ -36,53 +61,19 @@
       );
 
       eventSourceMain.onmessage = function (event) {
-        // Get JSON from EventSource stream and get now playing track from it.
-        var metadata = JSON.parse(event.data);
-        songCurrent = metadata["metadata"];
-        // Print now playing song.
-        console.log("Now playing: " + songCurrent);
-
-        // Set and print history of played songs.
-        try {
-          fetch(radioStreamMain.history)
-            .then((res) => res.json())
-            .then((out) => {
-              songHistory = out;
-              console.log("History: ", songHistory);
-            });
-
-          mainRadioMountIsAlive = true;
-        } catch (error) {
-          mainRadioMountIsAlive = false;
-          console.log(error);
-        }
+        setNowPlayingSong(event);
+        updatePlayedSongsHistory(radioStreamMain.history);
       };
 
       eventSourceSecondary.onmessage = function (event) {
         // If value of now playing song on the main radio mount is empty,
         // replace it with value from the secondary radio mount. Fallback.
+        //
+        // If array of latest played songs on the main radio mount is empty,
+        // replace it with array from the secondary radio mount. Fallback.
         if (mainRadioMountIsAlive === false) {
-          // Get JSON from EventSource stream and get now playing track from it.
-          var metadata = JSON.parse(event.data);
-          songCurrent = metadata["metadata"];
-          // Print now playing song.
-          console.log("Now playing: " + songCurrent);
-        }
-
-        // Set and print history of played songs.
-        try {
-          // If array of latest played songs on the main radio mount is empty,
-          // replace it with array from the secondary radio mount. Fallback.
-          if (mainRadioMountIsAlive === false) {
-            fetch(radioStreamMain.history)
-              .then((res) => res.json())
-              .then((out) => {
-                songHistory = out;
-                console.log("History: ", songHistory);
-              });
-          }
-        } catch (error) {
-          console.log(error);
+          setNowPlayingSong(event);
+          updatePlayedSongsHistory(radioStreamMain.history);
         }
       };
     } catch (error) {
