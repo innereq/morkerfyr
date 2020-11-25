@@ -58,7 +58,7 @@
 
       eventSourceMain.onerror = function () {
         mainRadioMountIsAlive = false;
-      }
+      };
     } catch (error) {
       console.log(error);
     }
