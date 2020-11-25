@@ -54,7 +54,7 @@
       var eventSourceSecondary = new ReconnectingEventSource.default(urlMetadataSecondary);
 
       eventSourceSecondary.onmessage = function (event) {
-        if (songCurrent === undefined) {
+        if (!songCurrent) {
           var metadata = JSON.parse(event.data);
           songCurrent = metadata["metadata"];
 
@@ -66,14 +66,14 @@
 
         // Print history of played songs.
         try {
-          if (!songHistory.length) {
+          if (!songHistory?.length) {
             fetch(urlHistorySecondary)
               .then((res) => res.json())
               .then((out) => {
                 songHistory = out;
                 console.log("History: ", songHistory);
               });
-            }
+          }
         } catch (error) {
           console.log(error);
         }
