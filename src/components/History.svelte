@@ -1,36 +1,24 @@
 <script>
-  import {
-    RADIO_HOST,
-    RADIO_MOUNT,
-    RADIO_MOUNT_SECONDARY,
-  } from "../../morkerfyr.config";
+  import { RADIO_MOUNT, RADIO_MOUNT_SECONDARY } from "../../morkerfyr.config";
+  import { Radio } from "./Radio";
   import { onMount } from "svelte";
-  import ReconnectingEventSource from "reconnecting-eventsource";
 
   // Init global values.
   let songCurrent = "ничего";
   let songHistory = [];
   let mainRadioMountIsAlive = false;
 
-  class Radio {
-    constructor(mount) {
-      this.url = RADIO_HOST + mount;
-      this.metadata = this.url + "/metadata";
-      this.history = this.metadata + "-history";
-    }
-  }
-
   // Get JSON from EventSource stream and set now playing track from it.
-  function setNowPlayingSong(event) {
-    const metadata = JSON.parse(event.data);
+  async function setNowPlayingSong(event) {
+    const metadata = await JSON.parse(event.data);
     songCurrent = metadata["metadata"];
     // Print now playing song.
     console.log("Now playing: " + songCurrent);
   }
 
   // Update and print history of last played songs.
-  function updatePlayedSongsHistory(history) {
-    fetch(history)
+  async function updatePlayedSongsHistory(history) {
+    await fetch(history)
       .then((res) => res.json())
       .then((out) => {
         songHistory = out;
@@ -46,39 +34,35 @@
     const radioStreamSecondary = new Radio(RADIO_MOUNT_SECONDARY);
 
     try {
-      const eventSourceMain = new ReconnectingEventSource.default(
-        radioStreamMain.metadata
-      );
+      const eventSourceMain = radioStreamMain.initEventSource();
 
-      eventSourceMain.onmessage = function (event) {
+      eventSourceMain.addEventListener("message", (event) => {
         setNowPlayingSong(event);
         updatePlayedSongsHistory(radioStreamMain.history);
         mainRadioMountIsAlive = true;
-      };
+      });
 
-      eventSourceMain.onerror = function () {
+      eventSourceMain.addEventListener("error", () => {
         mainRadioMountIsAlive = false;
-      };
+      });
     } catch (error) {
       console.log(error);
     }
 
     try {
-      const eventSourceSecondary = new ReconnectingEventSource.default(
-        radioStreamSecondary.metadata
-      );
+      const eventSourceSecondary = radioStreamSecondary.initEventSource();
 
       // If value of now playing song on the main radio mount is empty,
       // replace it with value from the secondary radio mount. Fallback.
       //
       // If array of last played songs on the main radio mount is empty,
       // replace it with array from the secondary radio mount. Fallback.
-      eventSourceSecondary.onmessage = function (event) {
+      eventSourceSecondary.addEventListener("message", (event) => {
         if (mainRadioMountIsAlive === false) {
           setNowPlayingSong(event);
           updatePlayedSongsHistory(radioStreamSecondary.history);
         }
-      };
+      });
     } catch (error) {
       console.log(error);
     }
