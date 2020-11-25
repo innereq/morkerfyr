@@ -46,7 +46,7 @@
         on:click={() => {
           theme = switchTheme;
         }}>
-        💡
+        {#if theme === 'dark'}☀️{:else}🌙{/if}
       </button>
     </div>
   </div>
