@@ -9,10 +9,12 @@
 
   // Do things only when DOM is rendered.
   onMount(() => {
+    // Main radio mount. Should be used when everything is fine.
     var urlStreamMain = RADIO_HOST + RADIO_MOUNT;
     var urlMetadataMain = urlStreamMain + "/metadata";
     var urlHistoryMain = urlMetadataMain + "-history";
 
+    // Secondary radio mount. Should be used if the main one is down. Fallback.
     var urlStreamSecondary = RADIO_HOST + RADIO_MOUNT_SECONDARY;
     var urlMetadataSecondary = urlStreamSecondary + "/metadata";
     var urlHistorySecondary = urlMetadataSecondary + "-history";
@@ -21,13 +23,14 @@
       var eventSourceMain = new ReconnectingEventSource.default(urlMetadataMain);
 
       eventSourceMain.onmessage = function (event) {
+        // Get JSON from EventSource stream and get now playing track from it.
         var metadata = JSON.parse(event.data);
         songCurrent = metadata["metadata"];
 
         // Print now playing song.
         console.log("Now playing: " + songCurrent);
 
-        // Print history of played songs.
+        // Set and print history of played songs.
         try {
           fetch(urlHistoryMain)
             .then((res) => res.json())
@@ -47,7 +50,10 @@
       var eventSourceSecondary = new ReconnectingEventSource.default(urlMetadataSecondary);
 
       eventSourceSecondary.onmessage = function (event) {
+        // If value of now playing song on the main radio mount is empty,
+        // replace it with value from the secondary radio mount. Fallback.
         if (songCurrent === "ничего") {
+          // Get JSON from EventSource stream and get now playing track from it.
           var metadata = JSON.parse(event.data);
           songCurrent = metadata["metadata"];
 
@@ -55,8 +61,10 @@
           console.log("Now playing: " + songCurrent);
         }
 
-        // Print history of played songs.
+        // Set and print history of played songs.
         try {
+          // If array of latest played songs on the main radio mount is empty,
+          // replace it with array from the secondary radio mount. Fallback.
           if (!songHistory?.length) {
             fetch(urlHistorySecondary)
               .then((res) => res.json())

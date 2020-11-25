@@ -13,6 +13,7 @@ and [Tailwind CSS](https://tailwindcss.com/).
 
 - Plays radio stream from RSAS (and any Icecast-compatible server)
 - Shows playing track and history of played tracks (using RSAS-exclusive API endpoints)
+- Fetches metadata from secondary radio mount when the main radio mount is down
 - Dark theme switcher
 - Markdown-powered blog with tags
 - RSS feed and sitemap.xml for the blog
@@ -22,7 +23,6 @@ and [Tailwind CSS](https://tailwindcss.com/).
 
 - Clickable tags for blog posts
 - Play radio when lurking other pages
-- Fetch metadata from secondary source when the main source is down
 
 ## Development
 
