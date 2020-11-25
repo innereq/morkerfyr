@@ -12,24 +12,27 @@
   let songHistory = [];
   let mainRadioMountIsAlive = false;
 
+  class Radio {
+    constructor(mount) {
+      this.url = RADIO_HOST + mount;
+      this.metadata = this.url + "/metadata";
+      this.history = this.metadata + "-history";
+    }
+  }
+
   // Do things only when DOM is rendered.
   onMount(() => {
     // Main radio mount. Should be used when everything is fine.
-    var urlStreamMain = RADIO_HOST + RADIO_MOUNT;
-    var urlMetadataMain = urlStreamMain + "/metadata";
-    var urlHistoryMain = urlMetadataMain + "-history";
-
+    var radioStreamMain = new Radio(RADIO_MOUNT);
     // Secondary radio mount. Should be used if the main one is down. Fallback.
-    var urlStreamSecondary = RADIO_HOST + RADIO_MOUNT_SECONDARY;
-    var urlMetadataSecondary = urlStreamSecondary + "/metadata";
-    var urlHistorySecondary = urlMetadataSecondary + "-history";
+    var radioStreamSecondary = new Radio(RADIO_MOUNT_SECONDARY);
 
     try {
       var eventSourceMain = new ReconnectingEventSource.default(
-        urlMetadataMain
+        radioStreamMain.metadata
       );
       var eventSourceSecondary = new ReconnectingEventSource.default(
-        urlMetadataSecondary
+        radioStreamSecondary.metadata
       );
 
       eventSourceMain.onmessage = function (event) {
@@ -41,7 +44,7 @@
 
         // Set and print history of played songs.
         try {
-          fetch(urlHistoryMain)
+          fetch(radioStreamMain.history)
             .then((res) => res.json())
             .then((out) => {
               songHistory = out;
@@ -71,7 +74,7 @@
           // If array of latest played songs on the main radio mount is empty,
           // replace it with array from the secondary radio mount. Fallback.
           if (mainRadioMountIsAlive === false) {
-            fetch(urlHistorySecondary)
+            fetch(radioStreamMain.history)
               .then((res) => res.json())
               .then((out) => {
                 songHistory = out;
