@@ -1,16 +1,11 @@
 <script>
   import { RADIO_HOST, RADIO_MOUNT, RADIO_MOUNT_SECONDARY } from "../../morkerfyr.config";
-  import { NOWPLAYING } from "../stores";
   import { onMount } from "svelte";
   import ReconnectingEventSource from "reconnecting-eventsource";
 
-  // Init global value for now playing song.
-  let songCurrent;
+  // Init global values.
+  let songCurrent = "ничего";
   let songHistory = [];
-  // https://svelte.dev/tutorial/writable-stores
-  const unsubscribe = NOWPLAYING.subscribe((value) => {
-    songCurrent = value;
-  });
 
   // Do things only when DOM is rendered.
   onMount(() => {
@@ -31,8 +26,6 @@
 
         // Print now playing song.
         console.log("Now playing: " + songCurrent);
-        // Change global state of now playing song.
-        NOWPLAYING.set(songCurrent);
 
         // Print history of played songs.
         try {
@@ -54,14 +47,12 @@
       var eventSourceSecondary = new ReconnectingEventSource.default(urlMetadataSecondary);
 
       eventSourceSecondary.onmessage = function (event) {
-        if (!songCurrent) {
+        if (songCurrent === "ничего") {
           var metadata = JSON.parse(event.data);
           songCurrent = metadata["metadata"];
 
           // Print now playing song.
           console.log("Now playing: " + songCurrent);
-          // Change global state of now playing song.
-          NOWPLAYING.set(songCurrent);
         }
 
         // Print history of played songs.
@@ -90,7 +81,7 @@
 
 <div class="text-center">
   <div class="mx-auto">
-    <h4 class="text-3xl">🎶 {$NOWPLAYING} 🎶</h4>
+    <h4 class="text-3xl">🎶 {songCurrent} 🎶</h4>
   </div>
 
   <h4 class="text-3xl font-bold">История</h4>
