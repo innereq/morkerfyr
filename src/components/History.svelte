@@ -6,6 +6,7 @@
   // Init global values.
   let songCurrent = "ничего";
   let songHistory = [];
+  let mainRadioMountIsAlive = false;
 
   // Do things only when DOM is rendered.
   onMount(() => {
@@ -21,12 +22,12 @@
 
     try {
       var eventSourceMain = new ReconnectingEventSource.default(urlMetadataMain);
+      var eventSourceSecondary = new ReconnectingEventSource.default(urlMetadataSecondary);
 
       eventSourceMain.onmessage = function (event) {
         // Get JSON from EventSource stream and get now playing track from it.
         var metadata = JSON.parse(event.data);
         songCurrent = metadata["metadata"];
-
         // Print now playing song.
         console.log("Now playing: " + songCurrent);
 
@@ -38,25 +39,22 @@
               songHistory = out;
               console.log("History: ", songHistory);
             });
+
+        mainRadioMountIsAlive = true;
+
         } catch (error) {
+          mainRadioMountIsAlive = false;
           console.log(error);
         }
       };
-    } catch (error) {
-      console.log(error);
-    }
-
-    try {
-      var eventSourceSecondary = new ReconnectingEventSource.default(urlMetadataSecondary);
 
       eventSourceSecondary.onmessage = function (event) {
         // If value of now playing song on the main radio mount is empty,
         // replace it with value from the secondary radio mount. Fallback.
-        if (songCurrent === "ничего") {
+        if (mainRadioMountIsAlive === false) {
           // Get JSON from EventSource stream and get now playing track from it.
           var metadata = JSON.parse(event.data);
           songCurrent = metadata["metadata"];
-
           // Print now playing song.
           console.log("Now playing: " + songCurrent);
         }
@@ -65,7 +63,7 @@
         try {
           // If array of latest played songs on the main radio mount is empty,
           // replace it with array from the secondary radio mount. Fallback.
-          if (!songHistory?.length) {
+          if (mainRadioMountIsAlive === false) {
             fetch(urlHistorySecondary)
               .then((res) => res.json())
               .then((out) => {
@@ -77,7 +75,8 @@
           console.log(error);
         }
       };
-    } catch(error) {
+
+    } catch (error) {
       console.log(error);
     }
 
