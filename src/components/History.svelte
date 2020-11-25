@@ -49,34 +49,34 @@
       const eventSourceMain = new ReconnectingEventSource.default(
         radioStreamMain.metadata
       );
+
+      eventSourceMain.onmessage = function (event) {
+        setNowPlayingSong(event);
+        updatePlayedSongsHistory(radioStreamMain.history);
+        mainRadioMountIsAlive = true;
+      };
+
+      eventSourceMain.onerror = function () {
+        mainRadioMountIsAlive = false;
+      }
+    } catch (error) {
+      console.log(error);
+    }
+
+    try {
       const eventSourceSecondary = new ReconnectingEventSource.default(
         radioStreamSecondary.metadata
       );
-
-      eventSourceMain.onmessage = function (event) {
-        try {
-          setNowPlayingSong(event);
-          updatePlayedSongsHistory(radioStreamMain.history);
-          mainRadioMountIsAlive = true;
-        } catch (error) {
-          mainRadioMountIsAlive = false;
-          console.log(error);
-        }
-      };
 
       // If value of now playing song on the main radio mount is empty,
       // replace it with value from the secondary radio mount. Fallback.
       //
       // If array of last played songs on the main radio mount is empty,
       // replace it with array from the secondary radio mount. Fallback.
-      if (mainRadioMountIsAlive === false) {
-        eventSourceSecondary.onmessage = function (event) {
-          try {
-            setNowPlayingSong(event);
-            updatePlayedSongsHistory(radioStreamMain.history);
-          } catch (error) {
-            console.log(error);
-          }
+      eventSourceSecondary.onmessage = function (event) {
+        if (mainRadioMountIsAlive === false) {
+          setNowPlayingSong(event);
+          updatePlayedSongsHistory(radioStreamSecondary.history);
         }
       };
     } catch (error) {
