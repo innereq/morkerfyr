@@ -28,7 +28,7 @@
     console.log("Now playing: " + songCurrent);
   }
 
-  // Update and print history of latest played songs.
+  // Update and print history of last played songs.
   function updatePlayedSongsHistory(history) {
     try {
       fetch(history)
@@ -69,7 +69,7 @@
         // If value of now playing song on the main radio mount is empty,
         // replace it with value from the secondary radio mount. Fallback.
         //
-        // If array of latest played songs on the main radio mount is empty,
+        // If array of last played songs on the main radio mount is empty,
         // replace it with array from the secondary radio mount. Fallback.
         if (mainRadioMountIsAlive === false) {
           setNowPlayingSong(event);
