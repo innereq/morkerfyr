@@ -1,0 +1,17 @@
+name: "Backup GitHub issues using git-bug"
+
+on:
+  schedule:
+    - cron: "0 0 * * *"
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+
+      - run: |
+          curl -o /usr/local/bin/git-bug -L https://github.com/MichaelMure/git-bug/releases/download/0.7.1/git-bug_linux_amd64 \
+          && chmod +x /usr/local/bin/git-bug \
+          && git bug help
