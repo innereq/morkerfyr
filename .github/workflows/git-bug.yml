@@ -18,4 +18,5 @@ jobs:
           && git config --local user.name "GitHub Action" \
           && git bug pull \
           && git bug bridge configure --name=default --target=github --owner=innereq --project=morkerfyr --token="${{ secrets.GITHUB_TOKEN }}" \
-          && git bug bridge pull
+          && git bug bridge pull \
+          && git bug push
