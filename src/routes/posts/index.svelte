@@ -1,10 +1,17 @@
 <script>
+  import { SITE_URL } from "../../../morkerfyr.config";
   // import the list of posts
   import { posts } from "../../posts";
+
+  const title = "Mörkerfyr Reviews";
 </script>
 
 <svelte:head>
-  <title>Mörkerfyr Reviews</title>
+  <title>{title}</title>
+  <meta property="og:title" content="{title}" />
+  <meta property="og:url" content="{SITE_URL}/posts/" />
+  <meta property="og:image" content="{SITE_URL}/logo-512.png" />
+  <meta property="og:description" content="Отвратительные рецензии на не менее отвратительную музыку." />
 </svelte:head>
 
 <div class="md:flex flex-col justify-center items-center">

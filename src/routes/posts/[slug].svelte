@@ -13,6 +13,10 @@
 </script>
 
 <script>
+  import { SITE_URL } from "../../../morkerfyr.config";
+
+  const title = "Mörkerfyr Reviews";
+
   // this prop is filled from the result of the `preload()`
   export let post;
 </script>
@@ -27,7 +31,11 @@
 </style>
 
 <svelte:head>
-  <title>{post.title} | Mörkerfyr Reviews</title>
+  <title>{post.title} | {title}</title>
+  <meta property="og:title" content="{post.title} | {title}" />
+  <meta property="og:url" content="{SITE_URL}/posts/{post.slug}/" />
+  <meta property="og:image" content="{SITE_URL}/logo-512.png" />
+  <meta property="og:description" content="Рецензия на альбом «{post.title}». Теги: {post.tags.join(", ")}." />
 </svelte:head>
 
 <!-- display the post -->

@@ -7,7 +7,7 @@ function renderXmlRssFeed(posts) {
       <channel>
         <title>Mörkerfyr Reviews</title>
         <link>${SITE_URL}</link>
-        <description>Музыка, пони. Пони, музыка. Йей!</description>
+        <description>Отвратительные рецензии на не менее отвратительную музыку.</description>
         <lastBuildDate>${new Date().toUTCString()}</lastBuildDate>
         <image>
           <url>${SITE_URL}/beacon_couple.webp</url>
@@ -21,9 +21,9 @@ function renderXmlRssFeed(posts) {
             <title>${post.title}</title>
             <link>${SITE_URL}/posts/${post.slug}/</link>
             <guid isPermaLink="false">${SITE_URL}/posts/${post.slug}/</guid>
-            <description>Рецензия на альбом ${
+            <description>Рецензия на альбом «${
               post.title
-            }. Теги: ${post.tags.join(", ")}.</description>
+            }». Теги: ${post.tags.join(", ")}.</description>
             <pubDate>${new Date(post.date).toUTCString()}</pubDate>
           </item>
         `
