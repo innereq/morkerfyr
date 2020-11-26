@@ -30,42 +30,34 @@
   onMount(() => {
     // Main radio mount. Should be used when everything is fine.
     const radioStreamMain = new Radio(RADIO_MOUNT);
+    const eventSourceMain = radioStreamMain.initEventSource();
     // Secondary radio mount. Should be used if the main one is down. Fallback.
     const radioStreamSecondary = new Radio(RADIO_MOUNT_SECONDARY);
+    const eventSourceSecondary = radioStreamSecondary.initEventSource();
 
-    try {
-      const eventSourceMain = radioStreamMain.initEventSource();
+    eventSourceMain.addEventListener("message", (event) => {
+      setNowPlayingSong(event);
+      updatePlayedSongsHistory(radioStreamMain.history);
+      mainRadioMountIsAlive = true;
+    });
 
-      eventSourceMain.addEventListener("message", (event) => {
+    eventSourceMain.addEventListener("error", () => {
+      mainRadioMountIsAlive = false;
+    });
+
+    // If main radio mount is down, replace metadata with the secondary one.
+    eventSourceSecondary.addEventListener("message", (event) => {
+      if (mainRadioMountIsAlive === false) {
         setNowPlayingSong(event);
-        updatePlayedSongsHistory(radioStreamMain.history);
-        mainRadioMountIsAlive = true;
-      });
+        updatePlayedSongsHistory(radioStreamSecondary.history);
+      }
+    });
 
-      eventSourceMain.addEventListener("error", () => {
-        mainRadioMountIsAlive = false;
-      });
-    } catch (error) {
-      console.log(error);
-    }
-
-    try {
-      const eventSourceSecondary = radioStreamSecondary.initEventSource();
-
-      // If value of now playing song on the main radio mount is empty,
-      // replace it with value from the secondary radio mount. Fallback.
-      //
-      // If array of last played songs on the main radio mount is empty,
-      // replace it with array from the secondary radio mount. Fallback.
-      eventSourceSecondary.addEventListener("message", (event) => {
-        if (mainRadioMountIsAlive === false) {
-          setNowPlayingSong(event);
-          updatePlayedSongsHistory(radioStreamSecondary.history);
-        }
-      });
-    } catch (error) {
-      console.log(error);
-    }
+    // Close spawned EventSource instances.
+    return(async () => {
+      await eventSourceMain.close();
+      await eventSourceSecondary.close();
+    });
   });
 </script>
 

@@ -29,6 +29,7 @@
       controls,
     });
 
+    // Close spawned player.
     return(async () => {
       await player.destroy();
     });
