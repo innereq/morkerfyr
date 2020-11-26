@@ -19,8 +19,8 @@ function renderXmlRssFeed(posts) {
             (post) => `
           <item>
             <title>${post.title}</title>
-            <link>${SITE_URL}/posts/${post.slug}</link>
-            <guid isPermaLink="false">${SITE_URL}/posts/${post.slug}</guid>
+            <link>${SITE_URL}/posts/${post.slug}/</link>
+            <guid isPermaLink="false">${SITE_URL}/posts/${post.slug}/</guid>
             <description>Рецензия на альбом ${
               post.title
             }. Теги: ${post.tags.join(", ")}.</description>
