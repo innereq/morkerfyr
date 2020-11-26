@@ -35,7 +35,9 @@
   <meta property="og:title" content="{post.title} | {title}" />
   <meta property="og:url" content="{SITE_URL}/posts/{post.slug}/" />
   <meta property="og:image" content="{SITE_URL}/logo-512.png" />
-  <meta property="og:description" content="Рецензия на альбом «{post.title}». Теги: {post.tags.join(", ")}." />
+  <meta
+    property="og:description"
+    content="Рецензия на альбом «{post.title}». Теги: {post.tags.join(', ')}." />
 </svelte:head>
 
 <!-- display the post -->

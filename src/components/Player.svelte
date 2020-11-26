@@ -30,9 +30,9 @@
     });
 
     // Close spawned player.
-    return(async () => {
+    return async () => {
       await player.destroy();
-    });
+    };
   });
 </script>
 

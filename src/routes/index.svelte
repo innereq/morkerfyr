@@ -11,7 +11,7 @@
 
 <svelte:head>
   <title>{title}</title>
-  <meta property="og:title" content="{title}" />
+  <meta property="og:title" content={title} />
   <meta property="og:url" content="{SITE_URL}/" />
   <meta property="og:image" content="{SITE_URL}/logo-512.png" />
   <meta property="og:description" content="Музыка, пони. Пони, музыка. Йей!" />

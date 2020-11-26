@@ -54,10 +54,10 @@
     });
 
     // Close spawned EventSource instances.
-    return(async () => {
+    return async () => {
       await eventSourceMain.close();
       await eventSourceSecondary.close();
-    });
+    };
   });
 </script>
 
