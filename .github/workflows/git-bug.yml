@@ -14,6 +14,8 @@ jobs:
       - run: |
           sudo curl -o /usr/local/bin/git-bug -L https://github.com/MichaelMure/git-bug/releases/download/0.7.1/git-bug_linux_amd64 \
           && sudo chmod +x /usr/local/bin/git-bug \
+          && git config --local user.email "action@github.com" \
+          && git config --local user.name "GitHub Action" \
           && git bug pull \
           && git bug bridge configure --name=default --target=github --owner=innereq --project=morkerfyr --token="${{ secrets.GITHUB_TOKEN }}" \
           && git bug bridge pull
