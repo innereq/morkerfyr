@@ -28,6 +28,10 @@
     const player = new Plyr("#player", {
       controls,
     });
+
+    return(() => {
+      player.destroy();
+    });
   });
 </script>
 
