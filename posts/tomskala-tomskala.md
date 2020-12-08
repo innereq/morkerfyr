@@ -1,7 +1,7 @@
 ---
 title: Tómskála — Tómskála
 author: Fuerlee
-date: 2020-10-01
+date: 2020-12-08
 tags:
   - black metal
 ---
