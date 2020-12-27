@@ -6,6 +6,8 @@ tags:
   - black metal
 ---
 
+<iframe style="border: 0; width: 100%; height: 274px;" src="https://bandcamp.com/EmbeddedPlayer/album=50691111/size=large/bgcol=ffffff/linkcol=0687f5/artwork=small/transparent=true/" seamless><a href="https://suturaapparatus.bandcamp.com/album/-">Крой by Sutura Apparatus</a></iframe>
+
 Как же хочется тяночку…
 
 Sutura Apparatus — это странное явление. Со своим дебютом они не наделали шумихи в российском блуцке, не принесли ничего нового в звучании, но зацепить меня им удалось знатно. Видимо, на это повлияла подача вокала, который сменяется несколько раз на протяжении всех, за исключением третьего, треков. А может и не это, а может я просто дурак и мне показалось, что это ускроенный Gris времён «Il Etait Une Forêt…». Т.к. этот релиз дебютный, я не могу сравнивать с их прошлыми работами, кудахча, мол, «раньше было лучше».
