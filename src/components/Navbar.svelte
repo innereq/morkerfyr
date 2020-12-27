@@ -37,7 +37,7 @@
       <a
         rel="prefetch"
         class={segment === 'posts' ? 'selected' : undefined}
-        href="posts">Рецензии</a>
+        href="posts">Блог</a>
     </div>
   </div>
   <div class="flex-1">
