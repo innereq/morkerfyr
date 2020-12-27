@@ -5,13 +5,13 @@ function renderXmlRssFeed(posts) {
   return `<?xml version="1.0" encoding="UTF-8" ?>
     <rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
       <channel>
-        <title>Mörkerfyr Reviews</title>
+        <title>Mörkerfyr Blog</title>
         <link>${SITE_URL}</link>
         <description>Отвратительные рецензии на не менее отвратительную музыку.</description>
         <lastBuildDate>${new Date().toUTCString()}</lastBuildDate>
         <image>
           <url>${SITE_URL}/beacon_couple.webp</url>
-          <title>Mörkerfyr Reviews</title>
+          <title>Mörkerfyr Blog</title>
           <link>${SITE_URL}</link>
         </image>
         ${posts

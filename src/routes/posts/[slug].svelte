@@ -15,7 +15,7 @@
 <script>
   import { SITE_URL } from "../../../morkerfyr.config";
 
-  const title = "Mörkerfyr Reviews";
+  const title = "Mörkerfyr Blog";
 
   // this prop is filled from the result of the `preload()`
   export let post;

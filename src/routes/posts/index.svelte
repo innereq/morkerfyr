@@ -3,7 +3,7 @@
   // import the list of posts
   import { posts } from "../../posts";
 
-  const title = "Mörkerfyr Reviews";
+  const title = "Mörkerfyr Blog";
 </script>
 
 <svelte:head>
@@ -19,7 +19,7 @@
 <div class="md:flex flex-col justify-center items-center">
   <article class="prose">
     <h1>
-      Mörkerfyr Reviews<span class="pl-4 opacity-50"><a
+      Mörkerfyr Blog<span class="pl-4 opacity-50"><a
           href="/posts/rss">[RSS]</a></span>
     </h1>
     <ul>
