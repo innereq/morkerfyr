@@ -1,3 +1,13 @@
+{{- block "metadata" . }}
+<title>{{.Site.Title}}</title>
+<meta property="og:title" content="{{.Site.Title}}" />
+<meta property="og:url" content="{{.Permalink}}" />
+<meta property="og:image" content="{{.Site.BaseURL}}/img/logo-512.png" />
+<meta property="og:description" content="Музыка, пони. Пони, музыка. Йей!" />
+{{- end }}
+
+<meta property="og:audio" content="https://radio.morkerfyr.mle.party:8443/stream" />
+
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1.0" />
 <meta name="theme-color" content="#333333" />

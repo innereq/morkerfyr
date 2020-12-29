@@ -1,3 +1,11 @@
+{{ define "metadata" }}
+<title>{{.Title}} | {{.Site.Title}}</title>
+<meta property="og:title" content="{{.Title}} | {{.Site.Title}}" />
+<meta property="og:url" content="{{.Permalink}}" />
+<meta property="og:image" content="{{.Site.BaseURL}}/img/logo-512.png" />
+<meta property="og:description" content="{{.Description}}" />
+{{ end }}
+
 {{ define "main" }}
 <main class="md:flex flex-col justify-center items-center">
   <article class="prose">
