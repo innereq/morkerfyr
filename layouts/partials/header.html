@@ -1,0 +1,18 @@
+<nav class="flex pb-5">
+  <div class="flex-1">
+    <div class="flex md:justify-center justify-start items-center">
+      {{ $current := . }}
+      {{ range .Site.Menus.nav }}
+        {{ $selected := or ($current.IsMenuCurrent "nav" .) ($current.HasMenuCurrent "nav" .) }}
+        {{ $selected = or $selected (eq .Name $current.Title) }}
+        {{ $selected = or $selected (and (eq (trim (path.Dir .URL) "/") $current.Section) (ne $current.Section "")) }}
+        <a href="{{ .URL }}" class="{{ if $selected }}selected{{ end }}">{{ .Name }}</a>
+      {{ end }}
+    </div>
+  </div>
+  <div class="flex-1">
+    <div class="flex md:justify-center justify-end items-center">
+      <dark-mode-toggle></dark-mode-toggle>
+    </div>
+  </div>
+</nav>

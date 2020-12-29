@@ -1,9 +1,12 @@
 module.exports = {
-  purge: ["./src/**/*.svelte"],
-  theme: {
-    extend: {},
-  },
-  variants: {},
-  plugins: [require("@tailwindcss/typography")],
-  darkMode: "class",
+  purge: [
+    "./content/*.md",
+    "./content/**/*.md",
+    "./layouts/*.html",
+    "./layouts/**/*.html"
+  ],
+  plugins: [
+    require('@tailwindcss/typography')
+  ],
+  darkMode: "class"
 };

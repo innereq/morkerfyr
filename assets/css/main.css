@@ -1,0 +1,39 @@
+@import "plyr/dist/plyr";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --plyr-color-main: white;
+  --plyr-audio-controls-background: none;
+  --plyr-audio-control-color: white;
+  --plyr-audio-control-color-hover: #4a5464;
+}
+
+.dark {
+  @apply bg-gray-900 text-gray-300;
+}
+
+.dark .prose,
+.dark .prose * {
+  @apply text-gray-300;
+}
+
+nav a {
+  padding-right: 1em;
+}
+
+nav .selected {
+  font-weight: 700;
+}
+
+#logo img {
+  max-width: 341px;
+}
+
+.prose #title h1,
+.prose #title h3,
+.prose #title h6 {
+  margin-bottom: 0;
+  margin-top: 0;
+}

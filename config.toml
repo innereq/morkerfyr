@@ -1,0 +1,21 @@
+baseURL = "https://morkerfyr.mle.party"
+languageCode = "ru-ru"
+title = "Mörkerfyr"
+
+[menu]
+  [[menu.nav]]
+    name = "Радио"
+    url = "/"
+    weight = 1
+  [[menu.nav]]
+    name = "Ревью"
+    url = "/reviews/"
+    weight = 2
+  [[menu.nav]]
+    name = "Подборки"
+    url = "/collections/"
+    weight = 3
+  [[menu.nav]]
+    name = "ТОП"
+    url = "/top/"
+    weight = 4

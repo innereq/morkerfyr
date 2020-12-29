@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  {{- partial "head.html" . -}}
+  <body class="mx-auto container min-h-screen">
+    <div class="flex flex-col justify-between p-4 min-h-screen">
+      {{- partial "header.html" . -}}
+      <div class="flex-1">
+        {{- block "main" . }}{{- end }}
+      </div>
+      {{- partial "footer.html" . -}}
+    </div>
+
+    {{ $main := resources.Get "js/main.js" | js.Build (dict "minify" true) | fingerprint }}
+    <script type="text/javascript" src="{{ $main.RelPermalink }}"></script>
+  </body>
+</html>

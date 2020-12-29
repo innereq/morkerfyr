@@ -1,0 +1,17 @@
+{{ define "main" }}
+<main class="md:flex flex-col justify-center items-center">
+  <article class="prose">
+    <header>
+      <h1>{{.Title}}</h1>
+    </header>
+    {{.Content}}
+    <ul>
+      {{ range .Site.Taxonomies.tags }}
+      <li>
+        <a href="{{.Page.Permalink}}">{{ .Page.Title }} ({{ .Count }})</a>
+      </li>
+      {{ end }}
+    </ul>
+  </article>
+</main>
+{{ end }}
