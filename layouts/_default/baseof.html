@@ -2,13 +2,12 @@
 <html>
   <head>
     {{- block "metadata" . }}
-    <title>{{.Site.Title}}</title>
-    <meta property="og:title" content="{{.Site.Title}}" />
+    <title>{{.Title}} | {{.Site.Title}}</title>
+    <meta property="og:title" content="{{.Title}} | {{.Site.Title}}" />
     <meta property="og:url" content="{{.Permalink}}" />
-    <meta property="og:image" content="{{.Site.BaseURL}}/img/logo-512.png" />
-    <meta property="og:description" content="Музыка, пони. Пони, музыка. Йей!" />
+    <meta property="og:image" content="{{.Site.BaseURL}}img/logo-512.png" />
+    <meta property="og:description" content="{{.Description}}" />
     {{- end }}
-
     {{- partial "head.html" . -}}
   </head>
   <body class="mx-auto container min-h-screen">

@@ -1,3 +1,3 @@
 ---
-title: Mörkerfyr Collections
+title: Подборки
 ---
