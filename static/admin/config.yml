@@ -5,7 +5,7 @@ media_folder: static/img
 public_folder: /img
 collections:
   - name: 'reviews'
-    label: 'Mörkerfyr Reviews'
+    label: 'Ревью'
     folder: 'content/reviews'
     create: true
     slug: '{{slug}}'
@@ -17,7 +17,7 @@ collections:
       - { label: 'Date', name: 'date', widget: 'datetime' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
   - name: 'collections'
-    label: 'Mörkerfyr Collections'
+    label: 'Подборка'
     folder: 'content/collections'
     create: true
     slug: '{{slug}}'
@@ -29,7 +29,7 @@ collections:
       - { label: 'Date', name: 'date', widget: 'datetime' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
   - name: 'top'
-    label: 'Mörkerfyr TOP'
+    label: 'Топ'
     folder: 'content/top'
     create: true
     slug: '{{slug}}'
