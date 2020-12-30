@@ -17,4 +17,4 @@ tags:
 7. [Gjallarhorn - Memories, Nightmares, Ash](https://gjallarhorn.bandcamp.com/album/memories-nightmares-ash)
 8. [Myrholt - Retterting](https://www.metal-archives.com/albums/Myrholt/Retterting/907003)
 9. [Labar'Oculto - Labar'Oculto](https://www.metal-archives.com/albums/Lábar%27Oculto/Lábar%27Oculto/907494)
-10. [Toreva - Extra Ecclesiam Nulla Salus](https://toreva.bandcamp.com/album/extra-ecclesiam-nulla-salus-album-2020)
+10. [Triumph - Edict of Iron Ascendancy](https://triumph2.bandcamp.com/album/edict-of-iron-ascendancy)
