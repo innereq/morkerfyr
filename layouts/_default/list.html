@@ -2,13 +2,18 @@
 <main class="md:flex flex-col justify-center items-center">
   <article class="prose">
     <header>
-      <h1>{{.Title}}<span class="pl-1 opacity-50"><a href="index.xml">[RSS]</a></span></h1>
+      <h1>
+        {{.Title}}<span class="pl-1 opacity-50"
+          ><a href="index.xml">[RSS]</a></span
+        >
+      </h1>
     </header>
     {{.Content}}
     <ul>
       {{ range .Pages }}
       <li>
-        <a href="{{.Permalink}}">{{.Title}}</a><span class="pl-1 opacity-50">[{{.Date.Format "2006-01-02"}}]</span>
+        <a href="{{.Permalink}}">{{.Title}}</a
+        ><span class="pl-1 opacity-50">[{{.Date.Format "2006-01-02"}}]</span>
       </li>
       {{ end }}
     </ul>

@@ -1,5 +1,5 @@
-import ReconnectingEventSource from 'reconnecting-eventsource';
-import {html, render} from 'lit-html';
+import ReconnectingEventSource from "reconnecting-eventsource";
+import { html, render } from "lit-html";
 
 class Radio {
   constructor(mount) {
@@ -18,19 +18,19 @@ let nowPlayingSong = "";
 let playedSongsHistory = [];
 let mainRadioMountIsAlive = false;
 
-const nowPlayingSongNode = document.getElementById('nowplaying');
-const playedSongsHistoryNode = document.getElementById('history');
+const nowPlayingSongNode = document.getElementById("nowplaying");
+const playedSongsHistoryNode = document.getElementById("history");
 
 // Get JSON from EventSource stream and set now playing track from it.
 async function setNowPlayingSong(event) {
   const metadata = await JSON.parse(event.data);
   nowPlayingSong = metadata["metadata"];
 
-  const nowPlayingSongTemplate = song => {
+  const nowPlayingSongTemplate = (song) => {
     return html`${song}`;
   };
   render(nowPlayingSongTemplate(nowPlayingSong), nowPlayingSongNode);
-  
+
   // Print now playing song.
   console.log("Now playing: " + nowPlayingSong);
 }
@@ -42,8 +42,8 @@ async function updatePlayedSongsHistory(history) {
     .then((out) => {
       playedSongsHistory = out.slice(1);
 
-      const playedSongsHistoryTemplate = playedSongsHistory.map(song => {
-        return html`<li>${song.metadata.song}</li>`
+      const playedSongsHistoryTemplate = playedSongsHistory.map((song) => {
+        return html`<li>${song.metadata.song}</li>`;
       });
       render(playedSongsHistoryTemplate, playedSongsHistoryNode);
 

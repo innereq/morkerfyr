@@ -7,20 +7,22 @@
     <meta property="og:url" content="{{.Permalink}}" />
     <meta property="og:image" content="{{.Site.BaseURL}}/img/logo-512.png" />
     <meta property="og:description" content="{{.Description}}" />
-    {{- end }}
-    {{- partial "head.html" . -}}
+    {{- end }} {{- partial "head.html" . -}}
   </head>
   <body class="mx-auto container min-h-screen">
     <div class="flex flex-col justify-between p-4 min-h-screen">
       {{- partial "header.html" . -}}
-      <div class="flex-1">
-        {{- block "main" . }}{{- end }}
-      </div>
+      <div class="flex-1">{{- block "main" . }}{{- end }}</div>
       {{- partial "footer.html" . -}}
     </div>
 
-    {{ $main := resources.Get "js/main.js" | js.Build (dict "minify" true) | fingerprint }}
+    {{ $main := resources.Get "js/main.js" | js.Build (dict "minify" true) |
+    fingerprint }}
     <script type="text/javascript" src="{{ $main.RelPermalink }}"></script>
-    <script data-goatcounter="https://morkerfyr.goatcounter.com/count" async src="https://gc.zgo.at/count.js"></script>
+    <script
+      data-goatcounter="https://morkerfyr.goatcounter.com/count"
+      async
+      src="https://gc.zgo.at/count.js"
+    ></script>
   </body>
 </html>

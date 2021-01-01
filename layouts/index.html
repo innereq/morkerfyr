@@ -10,7 +10,10 @@
   <div class="absolute inset-0 mx-auto pt-48">
     <!-- svelte-ignore a11y-media-has-caption -->
     <audio id="player" controls="controls" preload="none">
-      <source src="https://radio.morkerfyr.mle.party:8443/stream" type="audio/mpeg" />
+      <source
+        src="https://radio.morkerfyr.mle.party:8443/stream"
+        type="audio/mpeg"
+      />
     </audio>
   </div>
 </div>
@@ -21,12 +24,12 @@
   </div>
 
   <h4 class="text-3xl font-bold">История</h4>
-  <ul id="history">
-  </ul>
+  <ul id="history"></ul>
 </div>
 
-{{ $player := resources.Get "js/player.js" | js.Build (dict "minify" true) | fingerprint }}
-{{ $history := resources.Get "js/history.js" | js.Build (dict "minify" true) | fingerprint }}
+{{ $player := resources.Get "js/player.js" | js.Build (dict "minify" true) |
+fingerprint }} {{ $history := resources.Get "js/history.js" | js.Build (dict
+"minify" true) | fingerprint }}
 
 <script type="text/javascript" src="{{ $player.RelPermalink }}"></script>
 <script type="text/javascript" src="{{ $history.RelPermalink }}"></script>

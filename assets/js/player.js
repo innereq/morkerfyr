@@ -1,4 +1,4 @@
-import Plyr from 'plyr';
+import Plyr from "plyr";
 
 const controls = `
 <div class="plyr__controls flex-col dark:text-gray-300">
@@ -17,5 +17,5 @@ const controls = `
 </div>
 `;
 const player = new Plyr("#player", {
-controls,
+  controls,
 });
