@@ -27,9 +27,8 @@
   <ul id="history"></ul>
 </div>
 
-{{ $player := resources.Get "js/player.js" | js.Build (dict "minify" true) |
-fingerprint }} {{ $history := resources.Get "js/history.js" | js.Build (dict
-"minify" true) | fingerprint }}
+{{ $player := resources.Get "js/player.js" | js.Build (dict "minify" true) | fingerprint }}
+{{ $history := resources.Get "js/history.js" | js.Build (dict "minify" true) | fingerprint }}
 
 <script type="text/javascript" src="{{ $player.RelPermalink }}"></script>
 <script type="text/javascript" src="{{ $history.RelPermalink }}"></script>
