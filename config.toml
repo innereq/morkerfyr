@@ -15,7 +15,3 @@ title = "Mörkerfyr"
     name = "Подборки"
     url = "/collections/"
     weight = 3
-  [[menu.nav]]
-    name = "Топ"
-    url = "/top/"
-    weight = 4
