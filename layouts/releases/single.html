@@ -5,13 +5,13 @@
       <img src="{{.Params.cover}}" />
     </div>
 
-    <div>
+    <div class="border-b border-t">
       <h1 class="text-4xl">{{.Params.artist}}</h1>
       <h2 class="text-2xl">{{.Params.album}}</h2>
     </div>
 
     <div>
-      <ul>
+      <ul class="dark:text-black">
         {{if .Params.spotify}}
         <li>
           <a href="{{.Params.spotify}}"
@@ -20,7 +20,7 @@
         </li>
         {{ else }}
         <li>
-          <button class="w-full py-2 px-4 bg-gray-400"><s>Spotify</s></button>
+          <button class="w-full py-2 px-4 bg-gray-500"><s>Spotify</s></button>
         </li>
         {{end}} {{if .Params.bandcamp}}
         <li>
@@ -30,7 +30,7 @@
         </li>
         {{else}}
         <li>
-          <button class="w-full py-2 px-4 bg-gray-400"><s>Bandcamp</s></button>
+          <button class="w-full py-2 px-4 bg-gray-500"><s>Bandcamp</s></button>
         </li>
         {{ end }} {{if .Params.vk}}
         <li>
@@ -42,7 +42,7 @@
         </li>
         {{else}}
         <li>
-          <button class="w-full py-2 px-4 bg-gray-400">
+          <button class="w-full py-2 px-4 bg-gray-500 ">
             <s>Музыка ВКонтакте</s>
           </button>
         </li>
@@ -56,7 +56,7 @@
         </li>
         {{else}}
         <li>
-          <button class="w-full py-2 px-4 bg-gray-400">
+          <button class="w-full py-2 px-4 bg-gray-500">
             <s>Yandex.Music</s>
           </button>
         </li>
