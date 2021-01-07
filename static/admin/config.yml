@@ -18,6 +18,7 @@ collections:
       - { label: 'Date', name: 'date', widget: 'datetime' }
       - { label: 'Tags', name: 'tags', widget: 'list' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
+
   - name: 'collections'
     label: 'Подборки'
     folder: 'content/collections'
@@ -32,3 +33,21 @@ collections:
       - { label: 'Date', name: 'date', widget: 'datetime' }
       - { label: 'Tags', name: 'tags', widget: 'list' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
+
+  - name: 'releases'
+    label: 'Релизы'
+    folder: 'content/releases'
+    create: true
+    slug: '{{slug}}'
+    editor:
+      preview: true
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Date', name: 'date', widget: 'datetime' }
+      - { label: 'Author', name: 'author', widget: 'string' }
+      - { label: 'Album', name: 'album', widget: 'string' }
+      - { label: 'Cover Image', name: 'cover', widget: 'image' }
+      - { label: 'Spotify', name: 'spotify', widget: 'string' }
+      - { label: 'Bandcamp', name: 'bandcamp', widget: 'string' }
+      - { label: 'Музыка ВКонтакте', name: 'vk', widget: 'string' }
+      - { label: 'Яндекс.Музыка', name: 'yandex', widget: 'string' }
