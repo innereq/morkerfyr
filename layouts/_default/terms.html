@@ -1,4 +1,4 @@
-{{ define "main" }}
+{{define "main"}}
 <main class="md:flex flex-col justify-center items-center">
   <article class="prose">
     <header>
@@ -6,12 +6,12 @@
     </header>
     {{.Content}}
     <ul>
-      {{ range .Site.Taxonomies.tags }}
+      {{range .Site.Taxonomies.tags}}
       <li>
-        <a href="{{.Page.Permalink}}">{{ .Page.Title }} ({{ .Count }})</a>
+        <a href="{{.Page.Permalink}}">{{.Page.Title}} ({{.Count}})</a>
       </li>
-      {{ end }}
+      {{end}}
     </ul>
   </article>
 </main>
-{{ end }}
+{{end}}

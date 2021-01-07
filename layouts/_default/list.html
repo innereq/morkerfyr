@@ -1,4 +1,4 @@
-{{ define "main" }}
+{{define "main"}}
 <main class="md:flex flex-col justify-center items-center">
   <article class="prose">
     <header>
@@ -10,13 +10,13 @@
     </header>
     {{.Content}}
     <ul>
-      {{ range .Pages }}
+      {{range .Pages}}
       <li>
         <a href="{{.Permalink}}">{{.Title}}</a
         ><span class="pl-1 opacity-50">[{{.Date.Format "2006-01-02"}}]</span>
       </li>
-      {{ end }}
+      {{end}}
     </ul>
   </article>
 </main>
-{{ end }}
+{{end}}

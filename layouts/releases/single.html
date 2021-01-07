@@ -2,41 +2,67 @@
 <main class="flex flex-col justify-center items-center">
   <div class="md:w-1/4 border flex flex-col text-center">
     <div>
-      <img src="{{ .Params.cover }}">
+      <img src="{{.Params.cover}}" />
     </div>
 
     <div>
-      <h1 class="text-4xl">{{ .Params.artist }}</h1>
-      <h2 class="text-2xl">{{ .Params.album }}</h2>
+      <h1 class="text-4xl">{{.Params.artist}}</h1>
+      <h2 class="text-2xl">{{.Params.album}}</h2>
     </div>
 
     <div>
       <ul>
-        {{ if .Params.spotify }}
-          <li><a href="{{ .Params.spotify }}"><button class="w-full py-2 px-4 bg-green-400">Spotify</button></a></li>
+        {{if .Params.spotify}}
+        <li>
+          <a href="{{.Params.spotify}}"
+            ><button class="w-full py-2 px-4 bg-green-400">Spotify</button></a
+          >
+        </li>
         {{ else }}
-          <li><button class="w-full py-2 px-4 bg-gray-400"><s>Spotify</s></button></li>
-        {{ end }}
-
-        {{ if .Params.bandcamp }}
-          <li><a href="{{ .Params.bandcamp }}"><button class="w-full py-2 px-4 bg-blue-200">Bandcamp</button></a></li>
-        {{ else }}
-          <li><button class="w-full py-2 px-4 bg-gray-400"><s>Bandcamp</s></button></li>
-        {{ end }}
-
-        {{ if .Params.vk }}
-          <li><a href="{{ .Params.vk }}"><button class="w-full py-2 px-4 bg-blue-400">Музыка ВКонтакте</button></a></li>
-        {{ else }}
-          <li><button class="w-full py-2 px-4 bg-gray-400"><s>Музыка ВКонтакте</s></button></li>
-        {{ end }}
-
-        {{ if .Params.yandex }}
-          <li><a href="{{ .Params.yandex }}"><button class="w-full py-2 px-4 bg-yellow-400">Yandex.Music</button></a></li>
-        {{ else }}
-          <li><button class="w-full py-2 px-4 bg-gray-400"><s>Yandex.Music</s></button></li>
-        {{ end }}
+        <li>
+          <button class="w-full py-2 px-4 bg-gray-400"><s>Spotify</s></button>
+        </li>
+        {{end}} {{if .Params.bandcamp}}
+        <li>
+          <a href="{{.Params.bandcamp}}"
+            ><button class="w-full py-2 px-4 bg-blue-200">Bandcamp</button></a
+          >
+        </li>
+        {{else}}
+        <li>
+          <button class="w-full py-2 px-4 bg-gray-400"><s>Bandcamp</s></button>
+        </li>
+        {{ end }} {{if .Params.vk}}
+        <li>
+          <a href="{{.Params.vk}}"
+            ><button class="w-full py-2 px-4 bg-blue-400">
+              Музыка ВКонтакте
+            </button></a
+          >
+        </li>
+        {{else}}
+        <li>
+          <button class="w-full py-2 px-4 bg-gray-400">
+            <s>Музыка ВКонтакте</s>
+          </button>
+        </li>
+        {{ end }} {{ if .Params.yandex }}
+        <li>
+          <a href="{{.Params.yandex}}"
+            ><button class="w-full py-2 px-4 bg-yellow-400">
+              Yandex.Music
+            </button></a
+          >
+        </li>
+        {{else}}
+        <li>
+          <button class="w-full py-2 px-4 bg-gray-400">
+            <s>Yandex.Music</s>
+          </button>
+        </li>
+        {{end}}
       </ul>
     </div>
   </div>
 </main>
-{{ end }}
+{{end}}
