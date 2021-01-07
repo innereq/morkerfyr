@@ -47,7 +47,7 @@ collections:
       - { label: 'Author', name: 'author', widget: 'string' }
       - { label: 'Album', name: 'album', widget: 'string' }
       - { label: 'Cover Image', name: 'cover', widget: 'image' }
-      - { label: 'Spotify', name: 'spotify', widget: 'string' }
-      - { label: 'Bandcamp', name: 'bandcamp', widget: 'string' }
-      - { label: 'Музыка ВКонтакте', name: 'vk', widget: 'string' }
-      - { label: 'Яндекс.Музыка', name: 'yandex', widget: 'string' }
+      - { label: 'Spotify', name: 'spotify', widget: 'string', required: false }
+      - { label: 'Bandcamp', name: 'bandcamp', widget: 'string', required: false }
+      - { label: 'Музыка ВКонтакте', name: 'vk', widget: 'string', required: false }
+      - { label: 'Яндекс.Музыка', name: 'yandex', widget: 'string', required: false }
