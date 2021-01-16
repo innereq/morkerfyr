@@ -4,14 +4,19 @@
 @tailwind utilities;
 
 :root {
-  --plyr-color-main: white;
+  --plyr-color-main: black;
   --plyr-audio-controls-background: none;
-  --plyr-audio-control-color: white;
-  --plyr-audio-control-color-hover: #4a5464;
+  --plyr-audio-control-color: black;
+  --plyr-audio-control-color-hover: white;
 }
 
 .dark {
   @apply bg-gray-900 text-gray-300;
+
+  --plyr-color-main: white;
+  --plyr-audio-controls-background: none;
+  --plyr-audio-control-color: white;
+  --plyr-audio-control-color-hover: black;
 }
 
 .dark .prose,

@@ -1,12 +1,7 @@
 {{define "main"}}
 <div class="relative pb-5" id="logo">
   <img src="/img/logo.webp" class="mx-auto rounded-full" />
-  <div class="absolute inset-0 mx-auto pt-12 text-center">
-    <h4 class="text-white text-3xl font-bold dark:text-gray-300">
-      Mörkerfyr Radio
-    </h4>
-  </div>
-  <div class="absolute inset-0 mx-auto pt-48">
+  <div class="mx-auto md:w-1/4">
     <audio id="player" controls="controls" preload="none">
       <source
         src="https://radio.morkerfyr.mle.party:8443/stream"

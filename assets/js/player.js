@@ -1,7 +1,7 @@
 import Plyr from "plyr";
 
 const controls = `
-<div class="plyr__controls flex-col dark:text-gray-300">
+<div class="plyr__controls justify-center items-center bg-white">
   <button type="button" class="plyr__control" aria-label="Play, {title}" data-plyr="play">
     <svg class="icon--pressed" role="presentation"><use xlink:href="#plyr-pause"></use></svg>
     <svg class="icon--not-pressed" role="presentation"><use xlink:href="#plyr-play"></use></svg>
