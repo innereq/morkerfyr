@@ -2,7 +2,10 @@
 title: Malgöth - Primordial Dawn
 author: Fuerlee
 date: 2021-01-05T10:04:13.651Z
-tags: []
+tags:
+  - black metal
+  - death metal
+  - war metal
 ---
 {{< bandcamp 3776383753 >}}
 
