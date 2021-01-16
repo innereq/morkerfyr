@@ -6,15 +6,17 @@
     >
       <h4 class="text-3xl font-bold">Авторы</h4>
       <ul class="text-center">
-        <li>
-          <a href="https://t.me/fuerlee">Fuerlee</a
-          ><span class="pl-1 opacity-50">[музыка, материалы]</span>
-        </li>
-        <li>
-          <a href="https://sunbutt.faith/Участница:Commagray">Coma Grayce</a
-          ><span class="pl-1 opacity-50">[разработка, редактура]</span>
-        </li>
+        {{range .Site.Params.footer.authors}}
+        <li><a href="{{.link}}">{{.name}}</a><span class="pl-1 opacity-50">[{{.description}}]</span></li>
+        {{end}}
       </ul>
+    </div>
+  </div>
+
+  <!-- Logo -->
+  <div class="flex-1">
+    <div class="flex flex-col justify-center items-center h-full">
+      <img class="md:w-1/4 w-1/2" src="/img/logo.svg">
     </div>
   </div>
 
@@ -25,9 +27,9 @@
     >
       <h4 class="text-3xl font-bold">Ссылки</h4>
       <ul class="text-center">
-        <li><a href="https://t.me/morkerfyr">Telegram</a></li>
-        <li><a href="https://vk.com/morkerfyr">ВКонтакте</a></li>
-        <li><a href="https://github.com/innereq/morkerfyr">GitHub</a></li>
+        {{range .Site.Params.footer.links}}
+        <li><a href="{{.link}}">{{.name}}</a></li>
+        {{end}}
       </ul>
     </div>
   </div>

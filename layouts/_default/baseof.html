@@ -3,15 +3,9 @@
   <head>
     {{block "metadata" .}}
     <title>{{.Title}} | {{.Site.Title}}</title>
-    <meta property="og:title" content="{{.Title}} | {{.Site.Title}}" />
-    <meta property="og:url" content="{{.Permalink}}" />
-    {{if .Params.image}}
-      <meta property="og:image" content="{{.Site.BaseURL}}/{{.Params.image}}" />
-    {{else}}
-      <meta property="og:image" content="{{.Site.BaseURL}}/img/logo-512.png" />
+    {{template "_internal/opengraph.html" . }}
     {{end}}
-    <meta property="og:description" content="{{.Description}}" />
-    {{end}} {{partial "head.html" .}}
+    {{partial "head.html" .}}
   </head>
   <body class="mx-auto container min-h-screen">
     <div class="flex flex-col justify-between p-4 min-h-screen">
