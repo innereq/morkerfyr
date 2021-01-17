@@ -1,5 +1,5 @@
 ---
-title: Malgöth - Primordial Dawn
+title: Malgöth — Primordial Dawn
 author: Fuerlee
 date: 2021-01-05T10:04:13.651Z
 tags:
