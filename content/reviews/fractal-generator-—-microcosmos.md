@@ -1,5 +1,5 @@
 ---
-title: Fractal Generator — Microcosmos
+title: Fractal Generator — Macrocosmos
 author: Fuerlee
 date: 2021-01-17T10:33:17.914Z
 tags:
