@@ -1,5 +1,5 @@
 ---
-title: Fuerlee - Nothing
+title: Fuerlee — Nothing
 date: 2021-02-06T13:44:10.539Z
 artist: Fuerlee
 album: Nothing
