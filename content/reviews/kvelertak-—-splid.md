@@ -6,7 +6,7 @@ tags:
   - hardcore punk
   - black metal
 ---
-{{< spotify_artist 2pWZs59DuDL7ZTpRjjRq65 >}}
+{{< spotify_album 2pWZs59DuDL7ZTpRjjRq65 >}}
 
 Похоже блэк-н-ролл снова в меню.
 
