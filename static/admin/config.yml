@@ -62,15 +62,6 @@ collections:
     editor:
       preview: true
     fields:
-      - label: 'Title'
-        name: 'title'
-        widget: 'string'
-      - label: 'Author'
-        name: 'artist'
-        widget: 'string'
-      - label: 'Images'
-        name: 'images'
-        widget: 'image'
-        media_library:
-          config:
-            multiple: true
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Author', name: 'author', widget: 'string' }
+      - { label: 'Images', name: 'images', widget: 'list', allow_add: true, field: { label: 'Image', name: 'image', widget: 'image' } }
