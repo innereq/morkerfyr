@@ -1,8 +1,8 @@
 backend:
-  name: git-gateway
-  branch: master
-media_folder: static/img
-public_folder: /img
+  name: 'git-gateway'
+  branch: 'master'
+media_folder: 'static/img'
+public_folder: '/img'
 collections:
   - name: 'reviews'
     label: 'Ревью'
@@ -55,6 +55,8 @@ collections:
   - name: 'gallery'
     label: 'Галерея'
     folder: 'content/gallery'
+    media_folder: 'static/img/gallery'
+    public_folder: '/img/gallery'
     create: true
     slug: '{{slug}}'
     editor:
