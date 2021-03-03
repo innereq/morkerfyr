@@ -64,4 +64,4 @@ collections:
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
       - { label: 'Author', name: 'artist', widget: 'string' }
-      - { label: 'Images', name: 'images', widget: 'image' }
+      - { label: 'Images', name: 'images', widget: 'image', allow_multiple: true }
