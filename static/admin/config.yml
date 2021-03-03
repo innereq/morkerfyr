@@ -46,8 +46,20 @@ collections:
       - { label: 'Date', name: 'date', widget: 'datetime' }
       - { label: 'Artist', name: 'artist', widget: 'string' }
       - { label: 'Album', name: 'album', widget: 'string' }
-      - { label: 'Cover Image', name: 'cover', widget: 'image' }
+      - { label: 'Cover Image', name: 'cover', widget: 'image', allow_multiple: false }
       - { label: 'Spotify', name: 'spotify', widget: 'string', required: false }
       - { label: 'Bandcamp', name: 'bandcamp', widget: 'string', required: false }
       - { label: 'Музыка ВКонтакте', name: 'vk', widget: 'string', required: false }
       - { label: 'Яндекс.Музыка', name: 'yandex', widget: 'string', required: false }
+
+  - name: 'gallery'
+    label: 'Галерея'
+    folder: 'content/gallery'
+    create: true
+    slug: '{{slug}}'
+    editor:
+      preview: true
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Author', name: 'artist', widget: 'string' }
+      - { label: 'Images', name: 'images', widget: 'image' }

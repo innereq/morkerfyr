@@ -15,6 +15,10 @@ title = "Mörkerfyr"
     name = "Подборки"
     url = "/collections/"
     weight = 3
+  [[menu.nav]]
+    name = "Галерея"
+    url = "/gallery/"
+    weight = 4
 
 [params]
   images = ["img/logo-512.png"]
