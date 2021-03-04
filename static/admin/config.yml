@@ -56,6 +56,7 @@ collections:
     label: 'Галерея'
     folder: 'content/gallery'
     media_folder: '/static/img/gallery'
+    public_folder: '/img/gallery'
     create: true
     slug: '{{slug}}'
     editor:
