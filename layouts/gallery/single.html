@@ -1,0 +1,15 @@
+{{define "main"}}
+<main class="md:flex flex-col justify-center items-center">
+  <article class="prose">
+    <div id="title">
+      <h1>{{.Title}}</h1>
+      <h3>За авторством {{.Params.author}}</h3>
+    </div>
+    {{range .Params.images}}
+      <img src="{{.}}">
+    {{end}}
+
+    {{.Content}}
+  </article>
+</main>
+{{ end }}

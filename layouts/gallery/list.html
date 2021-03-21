@@ -9,7 +9,7 @@
     {{.Content}}
     {{range .Pages}}
     <div id="title">
-      <h1>{{.Title}}</h2>
+      <h1><a href="{{.Permalink}}">{{.Title}}</a></h2>
       <h3>За авторством {{.Params.author}}</h3>
     </div>
       {{range .Params.images}}
