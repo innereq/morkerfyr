@@ -3,13 +3,13 @@
   <article class="prose">
     <header>
       <h1>
-        {{.Title}}<span class="pl-1 opacity-50">
+        {{.Title}}
       </h1>
     </header>
     {{.Content}}
     {{range .Pages}}
     <div id="title">
-      <h1><a href="{{.Permalink}}">{{.Title}}</a></h2>
+      <h1>{{.Title}}</h1>
       <h3>За авторством {{.Params.author}}</h3>
     </div>
       {{range .Params.images}}

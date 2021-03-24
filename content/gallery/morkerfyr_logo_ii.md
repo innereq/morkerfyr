@@ -1,8 +1,5 @@
 ---
 title: Mörkerfyr Logo II
 author: RS Designs
-images: []
+images: ["/img/gallery/BlackBG1.png", "/img/gallery/WhiteBG1.png"]
 ---
-![](/img/gallery/BlackBG1.png)
-
-![](/img/gallery/WhiteBG1.png)

@@ -1,6 +1,5 @@
 ---
 title: Mörkerfyr Emblem I
 author: Karma
-images: []
+images: ["/img/gallery/Morkerfyr_Katya.png"]
 ---
-![](/img/gallery/Morkerfyr_Katya.png)
