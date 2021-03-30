@@ -1,5 +1,5 @@
 ---
-title: Acid Mammoth - Caravan
+title: Acid Mammoth — Caravan
 author: Fuerlee
 date: 2021-03-24T17:21:42.411Z
 tags:
