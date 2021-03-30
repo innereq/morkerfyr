@@ -9,7 +9,7 @@ tags:
 ---
 {{< bandcamp 303285143 >}}
 
-Sludgecore lives matter!
+Sludgecore lives matters!
 
 Вы не можете просто выпустить альбом под названием "I'm Going To Kill Myself", а затем исчезнуть на шесть лет. Я был обеспокоен.
 
