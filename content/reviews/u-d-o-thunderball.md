@@ -1,5 +1,5 @@
 ---
-title: U.D.O. - Thunderball
+title: U.D.O. — Thunderball
 author: Fuerlee
 date: 2021-03-07T12:12:34.700Z
 tags:
