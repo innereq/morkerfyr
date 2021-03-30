@@ -1,5 +1,5 @@
 ---
-title: Furia - W Śnialni
+title: Furia — W Śnialni
 description: ""
 author: Fuerlee
 date: 2021-03-13T15:40:55.877Z
