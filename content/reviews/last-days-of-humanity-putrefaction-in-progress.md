@@ -1,5 +1,5 @@
 ---
-title: Last Days Of Humanity - Putrefaction In Progress
+title: Last Days Of Humanity — Putrefaction In Progress
 author: Fuerlee
 date: 2021-03-29T13:36:04.370Z
 tags:
