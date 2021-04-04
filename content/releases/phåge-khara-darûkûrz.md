@@ -1,5 +1,5 @@
 ---
-title: Phåge - Khara-darûkûrz
+title: Phåge - Khara-Darûkûrz
 date: 2021-04-04T11:33:55.580Z
 artist: Phåge
 album: Khara-darûkûrz
