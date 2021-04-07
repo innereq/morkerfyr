@@ -1,5 +1,5 @@
 ---
-title: Spire - Temple Of Khronos
+title: Spire — Temple Of Khronos
 author: Fuerlee
 date: 2021-04-02T12:26:09.147Z
 tags:
