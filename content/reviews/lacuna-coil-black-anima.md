@@ -1,5 +1,5 @@
 ---
-title: Lacuna Coil - Black Anima
+title: Lacuna Coil — Black Anima
 author: Fuerle
 date: 2021-04-04T14:06:39.351Z
 tags:
