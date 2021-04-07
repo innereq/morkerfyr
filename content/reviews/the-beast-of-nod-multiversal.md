@@ -1,5 +1,5 @@
 ---
-title: The Beast Of Nod - Multiversal
+title: The Beast Of Nod — Multiversal
 author: Fuerlee
 date: 2021-04-03T10:09:44.662Z
 tags:
