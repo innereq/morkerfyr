@@ -1,5 +1,5 @@
 ---
-title: Anaal Nathrakh - Endarkenment
+title: Anaal Nathrakh — Endarkenment
 author: Fuerlee
 date: 2021-04-01T13:34:34.575Z
 tags:
