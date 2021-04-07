@@ -1,5 +1,5 @@
 ---
-title: Lucid Dreaming - The Chronicles Pt. III
+title: Lucid Dreaming — The Chronicles Pt. III
 author: Fuerlee
 date: 2021-03-31T15:58:08.378Z
 tags:
