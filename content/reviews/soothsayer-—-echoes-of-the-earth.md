@@ -6,7 +6,7 @@ tags:
   - atmospheric doom metal
   - sludge metal
 ---
-{{< bandcamp 2074830985 >}}
+{{< bandcamp 4018416401 >}}
 
 Эта светящаяся обложка альбома обещает зажигательный опыт прослушивания, и Echoes Of The Earth доставляет его.
 
