@@ -37,7 +37,7 @@ title = "Mörkerfyr"
   [[params.footer.authors]]
     name = "Mobi Lafrein"
     description = "материалы"
-    link = "#"
+    link = "https://vk.com/aljirlissabonin"
     weight = 3  
 
   [[params.footer.links]]
