@@ -3,7 +3,8 @@ title: Sutura Apparatus — Крой
 author: Fuerlee
 date: 2020-12-27
 tags:
-  - black metal
+  - depressive black metal
+  - doom metal
 aliases:
   - /posts/sutura_apparatus-kroj
 ---
