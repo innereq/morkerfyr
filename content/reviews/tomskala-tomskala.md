@@ -3,7 +3,8 @@ title: Tómskála — Tómskála
 author: Fuerlee
 date: 2020-12-08
 tags:
-  - black metal
+  - atmospheric black metal
+  - depressive black metal
 aliases:
   - /posts/tomskala-tomskala
 ---
