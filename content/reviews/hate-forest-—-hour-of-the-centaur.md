@@ -6,8 +6,7 @@ tags:
   - black metal
   - ambient
 ---
-<https://www.youtube.com/watch?v=4g2yKQt41OU>\
-<iframe width="560" height="315" src="https://www.youtube.com/embed/4g2yKQt41OU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+{{< youtube 4g2yKQt41OU >}}[](https://www.youtube.com/watch?v=4g2yKQt41OU)
 
 Природа настільки очистилась, що у Hate Forest вийшов новий альбом
 
