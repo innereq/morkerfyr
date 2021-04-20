@@ -5,6 +5,7 @@ date: 2021-04-16T09:22:25.646Z
 tags:
   - atmospheric black metal
   - ambient black metal
+  - australia
 ---
 {{< bandcamp 582267004 >}}
 
