@@ -5,6 +5,7 @@ date: 2021-04-18T06:46:08.403Z
 tags:
   - black metal
   - ambient
+  - ukraine
 ---
 {{< youtube 4g2yKQt41OU >}}[](https://www.youtube.com/watch?v=4g2yKQt41OU)
 
