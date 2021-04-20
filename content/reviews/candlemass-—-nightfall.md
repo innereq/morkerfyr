@@ -5,6 +5,7 @@ date: 2021-04-18T05:31:14.688Z
 tags:
   - epic doom metal
   - doom metal
+  - sweden
   - ЭБ
 ---
 {{< bandcamp 3739610495 >}}
