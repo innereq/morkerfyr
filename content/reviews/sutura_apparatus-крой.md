@@ -5,6 +5,7 @@ date: 2020-12-27
 tags:
   - depressive black metal
   - doom metal
+  - russia
 aliases:
   - /posts/sutura_apparatus-kroj
 ---
