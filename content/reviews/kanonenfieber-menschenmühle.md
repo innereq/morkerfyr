@@ -6,6 +6,7 @@ tags:
   - black metal
   - death metal
   - death doom metal
+  - germany
 ---
 {{< bandcamp 635439035 >}}
 
