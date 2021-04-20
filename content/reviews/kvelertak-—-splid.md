@@ -5,6 +5,7 @@ date: 2021-02-07T06:25:09.761Z
 tags:
   - hardcore punk
   - black metal
+  - norway
 ---
 {{< spotify 2pWZs59DuDL7ZTpRjjRq65 >}}
 
