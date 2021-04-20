@@ -5,6 +5,7 @@ date: 2021-03-07T12:12:34.700Z
 tags:
   - hard rock
   - heavy metal
+  - germany
 ---
 {{< spotify 4Zc5X735wlJVCzaE8Nz43W >}}
 
