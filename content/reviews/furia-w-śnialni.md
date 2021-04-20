@@ -6,6 +6,7 @@ date: 2021-03-13T15:40:55.877Z
 tags:
   - black metal
   - experimental metal
+  - poland
 ---
 {{< bandcamp 2142160333 >}}
 
