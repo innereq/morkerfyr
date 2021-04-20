@@ -6,6 +6,7 @@ tags:
   - atmospheric black metal
   - progressive black metal
   - norway
+  - ЭБ
 ---
 {{< spotify 3UYOwafjVwEJAeUjmcqYqZ >}}
 
