@@ -6,6 +6,7 @@ tags:
   - gothic metal
   - alternative
   - metalcore
+  - italy
 ---
 {{< spotify 2Op5m54XfuEqqXYRG0435d >}}\
 \
