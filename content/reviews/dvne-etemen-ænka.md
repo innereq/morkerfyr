@@ -6,6 +6,7 @@ tags:
   - progressive metal
   - sludge metal
   - post metal
+  - scotland
 ---
 {{< bandcamp 3408469710 >}}
 
