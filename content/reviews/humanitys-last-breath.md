@@ -5,6 +5,7 @@ date: 2021-02-28T15:13:16.288Z
 tags:
   - technical death metal
   - deathcore
+  - sweden
 ---
 {{< bandcamp 2661571307 >}}
 
