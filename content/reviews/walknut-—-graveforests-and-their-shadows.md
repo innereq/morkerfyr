@@ -4,6 +4,8 @@ author: Fuerlee
 date: 2021-04-19T16:18:44.968Z
 tags:
   - atmospheric black metal
+  - russia
+  - ЭБ
 ---
 {{< spotify 0oo2ntX35ZtgcMRVw2Oy61 >}}
 
