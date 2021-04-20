@@ -5,6 +5,7 @@ date: 2021-03-31T15:58:08.378Z
 tags:
   - heavy metal
   - power metal
+  - germany
 ---
 {{< spotify 0g93DQyae1XXzvGlrS1vtf >}}\
 \
