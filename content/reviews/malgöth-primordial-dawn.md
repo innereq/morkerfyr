@@ -6,6 +6,7 @@ tags:
   - black metal
   - death metal
   - war metal
+  - canada
 ---
 {{< bandcamp 3776383753 >}}
 
