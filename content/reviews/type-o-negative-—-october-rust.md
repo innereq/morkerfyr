@@ -4,6 +4,8 @@ author: Fuerlee
 date: 2021-04-19T07:44:50.485Z
 tags:
   - gothic metal
+  - us
+  - ЭБ
 ---
 {{< spotify 46NjYrJ5v5ZTIHMb1DrAgl >}}
 
