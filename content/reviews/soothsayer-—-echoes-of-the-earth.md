@@ -5,6 +5,7 @@ date: 2021-04-08T10:32:26.057Z
 tags:
   - atmospheric doom metal
   - sludge metal
+  - ireland
 ---
 {{< bandcamp 4018416401 >}}
 
