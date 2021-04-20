@@ -5,6 +5,7 @@ date: 2020-12-08
 tags:
   - atmospheric black metal
   - depressive black metal
+  - russia
 aliases:
   - /posts/tomskala-tomskala
 ---
