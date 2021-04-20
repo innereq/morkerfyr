@@ -6,6 +6,7 @@ tags:
   - goregrind
   - grindcore
   - noisecore
+  - netherlands
 ---
 {{< bandcamp 2184192773 >}}\
 \
