@@ -7,6 +7,7 @@ tags:
   - deathcore
   - black metal
   - death metal
+  - great britain
 ---
 {{< bandcamp 2433068275 >}}
 
