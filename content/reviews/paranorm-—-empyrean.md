@@ -5,6 +5,7 @@ date: 2021-04-25T13:47:46.591Z
 tags:
   - progressive thrash metal
   - technical death metal
+  - sweden
 ---
 {{< bandcamp 3260762997 >}}
 
