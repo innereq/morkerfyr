@@ -4,6 +4,10 @@ author: Fuerlee
 date: 2021-04-26T14:59:10.531Z
 tags:
   - black metal
+  - industrial metal
+  - grindcore
+  - sludge metal
+  - crust punk
   - france
 ---
 {{< bandcamp 1155159094 >}}
