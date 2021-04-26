@@ -5,7 +5,7 @@ date: 2021-03-18T16:14:27.936Z
 tags:
   - progressive metal
   - sludge metal
-  - post metal
+  - post-metal
   - scotland
 ---
 {{< bandcamp 3408469710 >}}
