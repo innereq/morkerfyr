@@ -7,6 +7,7 @@ tags:
   - death doom metal
   - death metal
   - finland
+  - ЭБ
 ---
 {{< spotify 2IaThjDDWu0WoHX2ZsbqFP >}}
 
