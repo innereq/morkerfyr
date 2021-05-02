@@ -4,8 +4,7 @@ author: Fuerlee
 date: 2021-05-02T07:50:28.620Z
 tags:
   - metalcore
-  - sludge
-  - metal
+  - sludge metal
   - post-metal
   - us
 ---
