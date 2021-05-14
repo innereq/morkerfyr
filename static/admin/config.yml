@@ -17,6 +17,8 @@ collections:
       - { label: 'Author', name: 'author', widget: 'string' }
       - { label: 'Date', name: 'date', widget: 'datetime' }
       - { label: 'Tags', name: 'tags', widget: 'list' }
+      - { label: 'Category', name: 'category', widget: 'string', required: false }
+      - { label: 'Country', name: 'country', widget: 'string', required: false }
       - { label: 'Body', name: 'body', widget: 'markdown' }
 
   - name: 'collections'
