@@ -5,8 +5,8 @@ author: Fuerlee
 date: 2021-04-17T15:34:29.054Z
 tags:
   - technical thrash metal
-  - switzerland
-  - ЭБ
+country: Швейцария
+category: Это база
 ---
 {{< spotify 0qbld4MsN4rUa4uyEm1juQ >}}\
 \

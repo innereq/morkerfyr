@@ -4,6 +4,7 @@
     <div id="title">
       <h1>{{.Title}}</h1>
       <h3>Опубликовано за авторством {{.Params.author}}</h3>
+      <h6>Страна: {{.Params.country}}</h6>
       <h6>Теги:
         {{range $key, $value := .Params.tags}}
           <a href="/tags/{{ $value | urlize }}">{{ $value }}</a>{{if ne $key (sub (len $.Params.tags) 1)}}, {{else}}{{end}}
