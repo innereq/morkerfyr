@@ -6,6 +6,7 @@ tags:
   - pagan metal
   - folk metal
   - russia
+country: Россия
 ---
 {{< spotify 228IrpEJlq2DfouyLhmRqB >}}
 
