@@ -9,6 +9,7 @@ tags:
   - blackgaze
   - ЭБ
   - france
+country: Франция
 ---
 {{< spotify 2T5RxzYKDvWrx69EpUuqls >}}
 
