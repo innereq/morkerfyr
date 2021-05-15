@@ -9,6 +9,7 @@ tags:
   - sludge metal
   - crust punk
   - france
+country: Франция
 ---
 {{< bandcamp 1155159094 >}}
 
