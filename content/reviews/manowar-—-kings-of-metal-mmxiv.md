@@ -6,6 +6,7 @@ tags:
   - heavy metal
   - us
   - ВТ
+country: США
 ---
 Прикрепил обычную версию альбома, т.к. его нету ни на bandcamp, ни на spotify.\
 \
