@@ -6,6 +6,7 @@ tags:
   - post-rock
   - doom metal
   - romania
+country: Румыния
 ---
 {{< bandcamp 1619088415 >}}
 
