@@ -7,6 +7,7 @@ tags:
   - grindcore
   - germany
   - ЭБ
+country: Германия
 ---
 {{< bandcamp 2428978723 >}}
 
