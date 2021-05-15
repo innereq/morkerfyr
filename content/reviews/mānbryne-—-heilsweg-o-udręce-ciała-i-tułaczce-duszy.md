@@ -5,6 +5,7 @@ date: 2021-04-27T15:43:24.673Z
 tags:
   - black metal
   - poland
+country: Польша
 ---
 {{< bandcamp 1247322426 >}}
 
