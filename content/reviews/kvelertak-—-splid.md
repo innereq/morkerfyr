@@ -6,6 +6,7 @@ tags:
   - hardcore punk
   - black metal
   - norway
+country: Норвегия
 ---
 {{< spotify 2pWZs59DuDL7ZTpRjjRq65 >}}
 
