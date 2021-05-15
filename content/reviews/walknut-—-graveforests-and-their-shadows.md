@@ -6,6 +6,7 @@ tags:
   - atmospheric black metal
   - russia
   - ЭБ
+country: Россия
 ---
 {{< spotify 0oo2ntX35ZtgcMRVw2Oy61 >}}
 
