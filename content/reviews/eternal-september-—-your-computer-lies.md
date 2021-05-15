@@ -8,6 +8,7 @@ tags:
   - pop metal
   - sweden
   - ВТ
+country: Швеция
 ---
 {{< bandcamp 4151685726 >}}
 
