@@ -7,6 +7,7 @@ tags:
   - industrial metal
   - progressive metal
   - canada
+country: Канада
 ---
 {{< spotify 0S5QQ8wg0UY7SLqGO5Z51X >}}
 
