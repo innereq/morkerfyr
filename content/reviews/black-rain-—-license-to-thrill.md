@@ -6,6 +6,7 @@ tags:
   - glam rock
   - france
   - ВТ
+country: Франция
 ---
 {{< bandcamp 584293663 >}}
 
