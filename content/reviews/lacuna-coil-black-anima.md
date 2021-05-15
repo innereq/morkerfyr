@@ -7,6 +7,7 @@ tags:
   - alternative
   - metalcore
   - italy
+country: Италия
 ---
 {{< spotify 2Op5m54XfuEqqXYRG0435d >}}\
 \
