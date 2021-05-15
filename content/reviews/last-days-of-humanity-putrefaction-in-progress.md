@@ -7,6 +7,7 @@ tags:
   - grindcore
   - noisecore
   - netherlands
+country: Нидерланды
 ---
 {{< bandcamp 2184192773 >}}\
 \
