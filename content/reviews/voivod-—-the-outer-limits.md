@@ -7,6 +7,7 @@ tags:
   - thrash metal
   - progressive rock
   - canada
+country: Канада
 ---
 {{< spotify 0EevA0t8Qcxh4TFLtBQPyo >}}
 
