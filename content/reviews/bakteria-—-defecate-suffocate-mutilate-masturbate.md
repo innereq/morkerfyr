@@ -7,6 +7,7 @@ tags:
   - crust
   - sweden
   - ВТ
+country: Швеция
 ---
 {{< spotify 0kFnfCb0wJsH3CUm1oobex >}}
 
