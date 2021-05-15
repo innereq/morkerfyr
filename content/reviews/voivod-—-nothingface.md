@@ -6,6 +6,7 @@ tags:
   - progressive thrash metal
   - thrash metal
   - canada
+country: Канада
 ---
 {{< youtube 0PcobzOHDg4 >}}
 
