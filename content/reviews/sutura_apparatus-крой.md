@@ -8,6 +8,7 @@ tags:
   - russia
 aliases:
   - /posts/sutura_apparatus-kroj
+country: Россия
 ---
 
 {{< bandcamp 50691111 >}}
