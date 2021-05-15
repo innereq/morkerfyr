@@ -6,6 +6,7 @@ tags:
   - sludge metal
   - doom metal
   - sweden
+country: Швеция
 ---
 {{< bandcamp 3474796450 >}}
 
