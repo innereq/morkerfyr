@@ -7,6 +7,7 @@ tags:
   - sludge metal
   - post-metal
   - scotland
+country: Шотладния
 ---
 {{< bandcamp 3408469710 >}}
 
