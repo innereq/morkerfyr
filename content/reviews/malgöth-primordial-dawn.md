@@ -7,6 +7,7 @@ tags:
   - death metal
   - war metal
   - canada
+country: Канада
 ---
 {{< bandcamp 3776383753 >}}
 
