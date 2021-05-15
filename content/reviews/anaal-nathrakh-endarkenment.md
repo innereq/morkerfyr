@@ -8,6 +8,7 @@ tags:
   - black metal
   - death metal
   - england
+country: Англия
 ---
 {{< bandcamp 2433068275 >}}
 
