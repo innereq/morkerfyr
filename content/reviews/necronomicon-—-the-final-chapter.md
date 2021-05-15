@@ -5,6 +5,7 @@ date: 2021-05-03T06:41:14.210Z
 tags:
   - thrash metal
   - germany
+country: Германия
 ---
 {{< spotify 29zNtpx3FXG9IGxHdEd1hr >}}
 
