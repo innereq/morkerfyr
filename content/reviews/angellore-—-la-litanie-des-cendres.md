@@ -5,6 +5,7 @@ date: 2021-05-09T20:24:30.653Z
 tags:
   - gothic metal
   - france
+country: Франция
 ---
 {{< bandcamp 4256227775 >}}
 
