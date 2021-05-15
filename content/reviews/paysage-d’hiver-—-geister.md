@@ -7,6 +7,7 @@ tags:
   - atmospheric black metal
   - dark ambient
   - switzerland
+country: Швейцария
 ---
 {{< bandcamp 762890511 >}}
 
