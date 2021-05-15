@@ -6,6 +6,7 @@ tags:
   - hard rock
   - heavy metal
   - germany
+country: Германия
 ---
 {{< spotify 4Zc5X735wlJVCzaE8Nz43W >}}
 
