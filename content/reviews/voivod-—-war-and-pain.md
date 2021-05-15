@@ -6,6 +6,7 @@ tags:
   - thrash metal
   - speed metal
   - canada
+country: Канада
 ---
 {{< spotify 6GWY2BAseXWPser0aVHUlp >}}
 
