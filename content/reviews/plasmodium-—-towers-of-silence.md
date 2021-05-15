@@ -6,6 +6,7 @@ tags:
   - black metal
   - death metal
   - australia
+country: Австралия
 ---
 {{< bandcamp 3765527380 >}}
 
