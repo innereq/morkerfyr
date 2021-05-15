@@ -6,6 +6,7 @@ tags:
   - gothic metal
   - us
   - ЭБ
+country: США
 ---
 {{< spotify 46NjYrJ5v5ZTIHMb1DrAgl >}}
 
