@@ -6,6 +6,7 @@ tags:
   - atmospheric black metal
   - ambient black metal
   - australia
+country: Австралия
 ---
 {{< bandcamp 582267004 >}}
 
