@@ -6,6 +6,7 @@ tags:
   - atmospheric black metal
   - black metal
   - scotland
+country: Шотландия
 ---
 {{< bandcamp 1864641292 >}}
 
