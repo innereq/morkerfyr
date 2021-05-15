@@ -6,6 +6,7 @@ tags:
   - technical death metal
   - experimental metal
   - canada
+country: Канада
 ---
 {{< bandcamp 892378656 >}}
 
