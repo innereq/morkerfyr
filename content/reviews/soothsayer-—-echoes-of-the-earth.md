@@ -6,6 +6,7 @@ tags:
   - atmospheric doom metal
   - sludge metal
   - ireland
+country: Ирландия
 ---
 {{< bandcamp 4018416401 >}}
 
