@@ -8,6 +8,7 @@ tags:
   - death metal
   - finland
   - ЭБ
+country: Финляндия
 ---
 {{< spotify 2IaThjDDWu0WoHX2ZsbqFP >}}
 
