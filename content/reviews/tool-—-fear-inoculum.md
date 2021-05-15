@@ -6,6 +6,7 @@ tags:
   - progressive rock
   - progressive metal
   - us
+country: США
 ---
 {{< spotify 7acEciVtnuTzmwKptkjth5 >}}
 
