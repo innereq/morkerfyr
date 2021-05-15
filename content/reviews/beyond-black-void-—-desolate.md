@@ -8,6 +8,7 @@ tags:
   - doom metal
   - belgium
   - ВТ
+country: Бельгия
 ---
 {{< bandcamp 1969409393 >}}
 
