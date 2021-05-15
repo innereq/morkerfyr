@@ -5,6 +5,7 @@ date: 2021-05-06T13:59:06.233Z
 tags:
   - death metal
   - italy
+country: Италия
 ---
 {{< bandcamp 534777092 >}}
 
