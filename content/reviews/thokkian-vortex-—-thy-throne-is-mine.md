@@ -6,6 +6,7 @@ tags:
   - black metal
   - israel
   - ВТ
+country: Израиль
 ---
 {{< bandcamp 1485873238 >}}
 
