@@ -6,6 +6,7 @@ tags:
   - black metal
   - norway
   - ЭБ
+country: Норвегия
 ---
 {{< bandcamp 2695408438 >}}
 
