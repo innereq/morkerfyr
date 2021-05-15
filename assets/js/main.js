@@ -21,6 +21,8 @@ darkModeToggle.setAttribute("permanent", "");
 // Welcoming splash text.
 let greetings = ['Варг не сделал ничего плохого',
                  'Liturgy — лучшая девочка',
+                 'Метал в целом для геев ведь',
+                 'Pink Floyd (Розовый него)',
                  'Hash is hui',
                  'Русский блэк? Что это?',
                  'Завтра первое выступление моей пони-горграйнд группы!',
