@@ -7,6 +7,7 @@ tags:
   - progressive black metal
   - norway
   - ЭБ
+country: Норвегия
 ---
 {{< spotify 3UYOwafjVwEJAeUjmcqYqZ >}}
 
