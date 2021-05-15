@@ -7,6 +7,7 @@ tags:
   - viking metal
   - norway
   - ВТ
+country: Норвегия
 ---
 {{< spotify 5HLtji6CTpVsHd7ULMJ8t7 >}}
 
