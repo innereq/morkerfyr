@@ -8,6 +8,7 @@ tags:
   - russia
 aliases:
   - /posts/tomskala-tomskala
+country: Россия
 ---
 
 {{< bandcamp 2249328194 >}}
