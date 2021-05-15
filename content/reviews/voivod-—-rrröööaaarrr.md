@@ -5,6 +5,7 @@ date: 2021-05-03T11:22:04.661Z
 tags:
   - thrash metal
   - canada
+country: Канада
 ---
 {{< spotify 252MzK2xkSSxlGGWgrOvHl >}}
 
