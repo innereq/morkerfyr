@@ -6,6 +6,7 @@ tags:
   - doom metal
   - atmospheric black metal
   - italy
+country: Италия
 ---
 {{< bandcamp 2320337768 >}}
 
