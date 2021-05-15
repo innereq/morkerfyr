@@ -5,6 +5,7 @@ date: 2021-04-14T08:47:40.695Z
 tags:
   - post-black metal
   - france
+country: Франция
 ---
 {{< bandcamp 2054636226 >}}
 
