@@ -5,6 +5,7 @@ date: 2021-05-04T13:49:44.164Z
 tags:
   - black metal
   - canada
+country: Канада
 ---
 {{< bandcamp 1441569197 >}}
 
