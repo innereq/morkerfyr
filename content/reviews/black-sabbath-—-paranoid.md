@@ -5,8 +5,9 @@ date: 2021-05-13T14:37:27.414Z
 tags:
   - hard rock
   - heavy metal
+  - england
 category: Это база
-country: Великобритания
+country: Англия
 ---
 {{< spotify 132qAo1cDiEJdA3fv4xyNK >}}
 
