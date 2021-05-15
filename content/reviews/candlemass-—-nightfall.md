@@ -7,6 +7,7 @@ tags:
   - doom metal
   - sweden
   - ЭБ
+country: Швеция
 ---
 {{< bandcamp 3739610495 >}}
 
