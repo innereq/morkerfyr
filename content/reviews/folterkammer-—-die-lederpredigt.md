@@ -7,6 +7,7 @@ tags:
   - symphonic black metal
   - operatic black metal
   - us
+country: США
 ---
 {{< bandcamp 1968871893 >}}
 
