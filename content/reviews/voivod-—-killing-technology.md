@@ -5,6 +5,7 @@ date: 2021-05-05T07:32:54.050Z
 tags:
   - progressive thrash metal
   - canada
+country: Канада
 ---
 {{< spotify 0SJfTElRVZqxKiG2MZBMCO >}}
 
