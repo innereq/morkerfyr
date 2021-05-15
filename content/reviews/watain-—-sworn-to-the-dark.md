@@ -7,6 +7,7 @@ tags:
   - black metal
   - sweden
   - ЭБ
+country: Швеция
 ---
 {{< bandcamp 836866233 >}}
 
