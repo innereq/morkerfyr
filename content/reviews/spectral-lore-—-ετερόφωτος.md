@@ -6,6 +6,7 @@ tags:
   - atmospheric black metal
   - drone
   - greece
+country: Греция
 ---
 {{< bandcamp 2182435356 >}}
 
