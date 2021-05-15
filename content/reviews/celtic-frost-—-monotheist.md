@@ -7,6 +7,7 @@ tags:
   - death metal
   - doom metal
   - switzerland
+country: Швейцария
 ---
 {{< spotify 3Jyy0CkiG9OkGDxQQGhMgy >}}
 
