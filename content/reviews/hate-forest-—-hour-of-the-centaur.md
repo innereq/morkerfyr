@@ -6,6 +6,7 @@ tags:
   - black metal
   - ambient
   - ukraine
+country: Украина
 ---
 {{< youtube 4g2yKQt41OU >}}[](https://www.youtube.com/watch?v=4g2yKQt41OU)
 
