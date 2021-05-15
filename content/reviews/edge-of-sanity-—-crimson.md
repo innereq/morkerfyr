@@ -6,6 +6,7 @@ tags:
   - melodic death metal
   - sweden
   - ЭБ
+country: Швеция
 ---
 {{< spotify 1NdKZrDhts3ADPdfycdnLO >}}
 
