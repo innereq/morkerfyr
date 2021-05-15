@@ -1,11 +1,12 @@
 ---
-title: Аркона — Goi, Rode, Goi!
+title: Аркона — Храм
 author: Fuerlee
 date: 2021-04-23T14:59:12.818Z
 tags:
   - pagan metal
   - folk metal
   - russia
+country: Россия
 ---
 {{< spotify 4T4S2qS3ZacmOupnRddwn7 >}}
 
