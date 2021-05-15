@@ -6,6 +6,7 @@ tags:
   - technical death metal
   - deathcore
   - sweden
+country: Швеция
 ---
 {{< bandcamp 2661571307 >}}
 
