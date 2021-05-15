@@ -7,6 +7,7 @@ tags:
   - doom death metal
   - us
   - ЭБ
+country: США
 ---
 {{< bandcamp 3300877942 >}}
 
