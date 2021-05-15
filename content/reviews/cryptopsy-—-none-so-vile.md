@@ -7,6 +7,7 @@ tags:
   - brutal death metal
   - canada
   - ЭБ
+country: Канада
 ---
 {{< bandcamp 157725502 >}}
 
