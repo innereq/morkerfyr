@@ -6,6 +6,7 @@ tags:
   - heavy metal
   - power metal
   - germany
+country: Германия
 ---
 {{< spotify 0g93DQyae1XXzvGlrS1vtf >}}\
 \
