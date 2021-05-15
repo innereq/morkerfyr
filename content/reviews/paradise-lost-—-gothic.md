@@ -7,6 +7,7 @@ tags:
   - gothic metal
   - england
   - ЭБ
+country: Англия
 ---
 {{< spotify 3ODeFujzfz3Ir1P7Wau0kb >}}
 
