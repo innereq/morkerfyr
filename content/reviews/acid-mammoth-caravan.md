@@ -6,6 +6,7 @@ tags:
   - doom metal
   - stoner metal
   - greece
+country: Греция
 ---
 {{< bandcamp 2074830985 >}}
 
