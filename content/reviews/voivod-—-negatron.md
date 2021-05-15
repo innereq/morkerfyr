@@ -3,9 +3,11 @@ title: Voivod — Negatron
 author: Fuerlee
 date: 2021-05-12T05:20:56.067Z
 tags:
+  - thrash metal
   - industrial metal
   - progressive metal
   - canada
+country: Канада
 ---
 {{< spotify 1kGaz0FYqxCn8iNB6gSfeI >}}
 
