@@ -6,6 +6,7 @@ tags:
   - progressive thrash metal
   - technical death metal
   - sweden
+country: Швеция
 ---
 {{< bandcamp 3260762997 >}}
 
