@@ -7,6 +7,7 @@ tags:
   - experimental metal
   - atmospheric black metal
   - australia
+country: Австралия
 ---
 {{< bandcamp 1599591216 >}}
 
