@@ -5,7 +5,6 @@ date: 2021-04-25T04:34:14.374Z
 tags:
   - metalcore
 country: Италия
-category: В топку
 ---
 {{< bandcamp 4020037810 >}}
 

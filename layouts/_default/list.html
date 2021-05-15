@@ -8,44 +8,15 @@
         >
       </h1>
     </header>
-    Чуть более обособленные категории: <a href="#это-база">«Это база»</a>, <a href="#в-топку">«В топку»</a>.
-
     {{.Content}}
     <ul>
       {{range .Pages}}
-        {{if not (or (in .Params.category "Это база") (in .Params.category "В топку"))}}
-        <li>
-          <a href="{{.Permalink}}">{{.Title}}</a
-          ><span class="pl-1 opacity-50">[{{.Params.country}}]</span><span class="pl-1 opacity-50">[{{.Date.Format "2006-01-02"}}]</span>
-        </li>
-        {{end}}
+      <li>
+        <a href="{{.Permalink}}">{{.Title}}</a
+        ><span class="pl-1 opacity-50">[{{.Params.country}}]</span><span class="pl-1 opacity-50">[{{.Date.Format "2006-01-02"}}]</span>
+      </li>
       {{end}}
     </ul>
-
-    <h1 id="это-база">Это база</h1>
-    <ul>
-      {{range .Pages}}
-        {{if eq .Params.category "Это база"}}
-          <li>
-            <a href="{{.Permalink}}">{{.Title}}</a
-            ><span class="pl-1 opacity-50">[{{.Params.country}}]</span><span class="pl-1 opacity-50">[{{.Date.Format "2006-01-02"}}]</span>
-          </li>
-        {{end}}
-      {{end}}
-    </ul>
-
-    <h1 id="в-топку">В топку</h1>
-    <ul>
-      {{range .Pages}}
-        {{if eq .Params.category "В топку"}}
-          <li>
-            <a href="{{.Permalink}}">{{.Title}}</a
-            ><span class="pl-1 opacity-50">[{{.Params.country}}]</span><span class="pl-1 opacity-50">[{{.Date.Format "2006-01-02"}}]</span>
-          </li>
-        {{end}}
-      {{end}}
-    </ul>
-
   </article>
 </main>
 {{end}}
