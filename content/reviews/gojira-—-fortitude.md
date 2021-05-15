@@ -6,6 +6,7 @@ tags:
   - progressive death metal
   - melodic groove metal
   - groove metal
+  - france
 country: Франция
 ---
 {{< spotify 3bmdzJRZ4DLRTiA6yBBQcI >}}
