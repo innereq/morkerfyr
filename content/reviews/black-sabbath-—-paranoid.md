@@ -6,6 +6,7 @@ tags:
   - hard rock
   - heavy metal
   - england
+  - ЭБ
 category: Это база
 country: Англия
 ---
