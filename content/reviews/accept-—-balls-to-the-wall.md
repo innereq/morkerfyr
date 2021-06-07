@@ -5,6 +5,7 @@ date: 2021-06-07T13:33:23.609Z
 tags:
   - heavy metal
   - germany
+  - ЭБ
 country: Германия
 ---
 {{< spotify 2twCPCDGJjVD90GWUjA8vN >}}
