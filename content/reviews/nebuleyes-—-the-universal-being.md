@@ -7,6 +7,7 @@ tags:
   - symphonic metal
   - ambient metal
   - france
+  - ВТ
 country: Франция
 ---
 {{< bandcamp 3563434059 >}}
