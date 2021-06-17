@@ -4,6 +4,7 @@ author: Fuerlee
 date: 2021-04-25T04:34:14.374Z
 tags:
   - metalcore
+  - ВТ
 country: Италия
 ---
 {{< bandcamp 4020037810 >}}
