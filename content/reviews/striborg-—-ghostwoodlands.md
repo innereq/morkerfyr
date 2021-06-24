@@ -5,6 +5,7 @@ date: 2021-06-24T13:02:12.120Z
 tags:
   - black metal
   - ambient black metal
+  - ВТ
   - australia
 country: Австралия
 ---
